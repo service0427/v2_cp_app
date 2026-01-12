@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+venv/
+logs/
+captures/
+coupang_apk/
+
+# Configuration (Secrets)
+config/wg.conf
+config/device_config.json
+config/session_state.json
+
+# Runtime Dumps & State
+*.xml
+*.png
+*.tmp
+device_id_history.json
+requests_data.json
+scenarios.json.tmp
+
+# Allow templates
+!config/wg.conf.example

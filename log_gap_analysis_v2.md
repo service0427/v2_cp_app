@@ -1,0 +1,3287 @@
+# Bulksubmit Schema Gap Analysis Report
+Analysis Date: 2026. 01. 12. (월) 21:09:14 KST
+Scenarios: 25
+---
+
+## Scenario 0: 노트북 (Product: 8099175514)
+- **Sim Dir**: `193900_노트북_8099175514`
+- **Capture**: `노트북-8099175514-7.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: 4203687e5308251 vs Cap: 52e0c3443302130)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchCount (Sim: 2200405 vs Cap: 2216685)`
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 7)`
+    - `[data] Value Mismatch: ixid (Sim: 24d18595-ef8e-4b31-8e3c-476063993c27 vs Cap: 000085a4-8e21-ed7e-5893-72a221218ecb)`
+    - `[extra] Value Mismatch: pvId (Sim: 33024456 vs Cap: 142178343)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchCount (Sim: 2200405 vs Cap: 2216685)`
+    - `[data] Missing Key: reviewRating (Expected: 5.0)`
+    - `[data] Value Mismatch: searchViewType (Sim:  vs Cap: LIST)`
+    - `[data] Value Mismatch: isAiUspTargetProduct (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rank (Sim:  vs Cap: 7)`
+    - `[data] Missing Key: deliveryBadge (Expected: ROCKET)`
+    - `[data] Value Mismatch: productId (Sim: 9157768529 vs Cap: 8099175514)`
+    - `[data] Value Mismatch: productPickType (Sim:  vs Cap: COUPICK)`
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Missing Key: emphasizeText (Expected: )`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: itemId (Sim: 26972177881 vs Cap: 24484671869)`
+    - `[data] Missing Key: rocketType (Expected: ROCKET)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 93941070559 vs Cap: 90175431639)`
+    - `[data] Value Mismatch: hasUspGeneratedByAi (Sim: False vs Cap: True)`
+    - `[data] Missing Key: rocketDeliveryType (Expected: ROCKET,TOMORROW)`
+    - `[data] Value Mismatch: searchRank (Sim: 25 vs Cap: 7)`
+    - `[data] Missing Key: deliveryValueType (Expected: ROCKETDELIVERY_D+1;ROCKETWOW_OVERNIGHT)`
+    - `[data] Missing Key: q (Expected: 노트북)`
+    - `[data] Missing Key: internalCategoryId (Expected: 62886)`
+    - `[data] Missing Key: id (Expected: 8099175514)`
+    - `[data] Missing Key: itemProductId (Expected: 4)`
+    - `[extra] Value Mismatch: abGroups (Sim: NOT_APPLICABLE vs Cap: A,B,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: catalogBrandName (Sim: LG전자 vs Cap: HP)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 2 vs Cap: 10)`
+    - `[extra] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET)`
+    - `[extra] Missing Key: ratingCount (Expected: (732))`
+    - `[extra] Value Mismatch: badges (Sim:  vs Cap: COU_PICK)`
+    - `[extra] Value Mismatch: abTestIds (Sim: 96194 vs Cap: 91493,89678,96194)`
+    - `[extra] Value Mismatch: llmRootBrandName (Sim: lg vs Cap: huntingtonpress)`
+    - `[extra] Value Mismatch: isDawnDeliveryItem (Sim: false vs Cap: true)`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: rank (Sim: 1 vs Cap: 9)`
+    - `[data] Value Mismatch: itemId (Sim: 24758866988 vs Cap: 24484671869)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: true)`
+    - `[data] Value Mismatch: viewType (Sim:  vs Cap: BRICK_PRODUCT_UNIT_LIST_UPROTOCOL_M2)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 91767225813 vs Cap: 90175431639)`
+    - `[data] Value Mismatch: searchRank (Sim: 0 vs Cap: 7)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: True)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: isProductReviewSurveyVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isRuleBasedTitleEligible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (732))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: couponNudge (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: source (Sim:  vs Cap: srp)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 3)`
+    - `[data] Value Mismatch: productReviewSurvey (Sim:  vs Cap: 사용 목적 사무용 무게 적당해요 성능 기대이상뛰어나요)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Computer & Digital)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Computer)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: 24d18595-ef8e-4b31-8e3c-476063993c27 vs Cap: 000085a4-8e21-ed7e-5893-72a221218ecb)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T19:39:03.677+0900 vs Cap: 2026-01-12T15:08:02.645+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 739,000원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 3)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 4217)`
+    - `[data] Value Mismatch: productId (Sim: 8550239448 vs Cap: 8099175514)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: brandId (Sim:  vs Cap: 257)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 343)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET,TOMORROW)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 내일(화) 도착 )`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: rocketType (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Computer & Digital)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 5.0)`
+    - `[data] Value Mismatch: badges (Sim:  vs Cap: COU_PICK)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: True)`
+    - `[data] Value Mismatch: hasRuleBasedTitle (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: productDeliveryBenefitGroup (Sim:  vs Cap: 무료배송)`
+    - `[extra] Value Mismatch: isFashionQuery (Sim: False vs Cap: false)`
+    - `[extra] Missing Key: exposedAttributesAvailable (Expected: Natural Silver,512GB,16GB)`
+    - `[extra] Missing Key: dawnDeliveryEnabled (Expected: true)`
+    - `[extra] Missing Key: similarProduct (Expected: false)`
+    - `[extra] Missing Key: pddMessage (Expected: 내일(화) 도착 )`
+    - `[extra] Missing Key: abGroups (Expected: B,NOT_APPLICABLE,NOT_APPLICABLE,C,NOT_APPLICABLE,A)`
+    - `[extra] Missing Key: economicOptionAvailable (Expected: false)`
+    - `[extra] Missing Key: catalogBrandName (Expected: HP)`
+    - `[extra] Missing Key: hasMultipleImages (Expected: false)`
+    - `[extra] Missing Key: titleExcludeAttributeNames (Expected: Natural Silver,512GB,16GB,WIN11 Home,15-fc0260AU)`
+    - `[extra] Missing Key: originalTitleStartsWithBrand (Expected: true)`
+    - `[extra] Missing Key: priceInfo (Expected: anchorPrice:null,salesPrice:739000,finalPrice:739000,20dMinPrice:598600,asisRate:0,tobeRate:0,discountType:noDiscount)`
+    - `[extra] Missing Key: sdpThumbnailImageCount (Expected: 10)`
+    - `[extra] Missing Key: hasLlmBrand (Expected: true)`
+    - `[extra] Missing Key: boldedBrandType (Expected: LLM)`
+    - `[extra] Missing Key: pddTime (Expected: 2026-01-13 23:59:59)`
+    - `[extra] Missing Key: brandInOriginalTitle (Expected: true)`
+    - `[extra] Missing Key: isSamedayDeliveryItem (Expected: false)`
+    - `[extra] Missing Key: eligibleExperiments (Expected: 86150)`
+    - `[extra] Missing Key: originalBadges (Expected: COU_PICK,handymanBadge)`
+    - `[extra] Missing Key: isFreeReturnAvailable (Expected: false)`
+    - `[extra] Missing Key: samedayDeliveryEnabled (Expected: false)`
+    - `[extra] Missing Key: ratingCount (Expected: (732))`
+    - `[extra] Missing Key: similarProductWidgetShortcut (Expected: true)`
+    - `[extra] Missing Key: finalTitle (Expected: nullHP HP 15 Natural Silver 약 15인치에 해당함 • 라이젠5 • 512GB • 16GB • WIN11 Home • 2024.06 • 15-fc0260AU)`
+    - `[extra] Missing Key: economicOptionVisible (Expected: false)`
+    - `[extra] Missing Key: isFreeDelivery (Expected: true)`
+    - `[extra] Missing Key: originalBrandName (Expected: HP)`
+    - `[extra] Missing Key: seeMoreOptionAvailable (Expected: false)`
+    - `[extra] Missing Key: seeMoreOptionVisible (Expected: false)`
+    - `[extra] Missing Key: hasWowBenefit (Expected: false)`
+    - `[extra] Missing Key: abTestIds (Expected: 89678,94952,96194,92723,86688,91493)`
+    - `[extra] Missing Key: originalTitle (Expected: HP 2024 노트북 15 라이젠5 라이젠 7000 시리즈)`
+    - `[extra] Missing Key: imageURLs (Expected: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/67c8/d1ccb3e92db8aba79db4ee7a71ae5d92d8c47422f121ec6c810e91c9fe8a.jpg.webp)`
+    - `[extra] Missing Key: srpThumbnailImageCount (Expected: 1)`
+    - `[extra] Missing Key: llmRootBrandName (Expected: huntingtonpress)`
+    - `[extra] Missing Key: hasCatalogBrand (Expected: true)`
+    - `[extra] Missing Key: isDawnDeliveryItem (Expected: true)`
+    - `[extra] Missing Key: isBrandEqualToProductName (Expected: false)`
+    - `[extra] Missing Key: ratingAverage (Expected: 5.0)`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 160x160)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 160x125)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 160x160)`
+    - `[extra] Missing Key: boldedBrandName (Expected: HP)`
+    - `[extra] Missing Key: titleContent (Expected: nullHP HP 15 Natural Silver 약 15인치에 해당함 • 라이젠5 • 512GB • 16GB • WIN11 Home • 2024.06 • 15-fc0260AU)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 95)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 80)`
+    - `[extra] Missing Key: commonViewType (Expected: LIST)`
+    - `[extra] Missing Key: uniqueKey (Expected: 77acb9e8-20fc-46c4-8d3f-10f7483f0ea4:LIST)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: 3h2mcxgadsjify9qli vs Cap: iff0wtd9mfs8756nhv)`
+    - `[data] Value Mismatch: rank (Sim: 5 vs Cap: 7)`
+    - `[data] Value Mismatch: ratingCount (Sim: 733 vs Cap: 732)`
+    - `[data] Value Mismatch: ratingAverage (Sim: 5.0 vs Cap: 5)`
+    - `[data] Value Mismatch: toggleViewType (Sim: search vs Cap: srp_list)`
+- **Schema 11599**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: 3h2mcxgadsjify9qli vs Cap: iff0wtd9mfs8756nhv)`
+    - `[data] Value Mismatch: sdpHandlerClickType (Sim: cancel vs Cap: add_to_cart)`
+
+## Scenario 1: 소파 (Product: 9158522812)
+- **Sim Dir**: `193908_소파_9158522812`
+- **Capture**: `소파-9158522812-34.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: 177152bf4926015 vs Cap: 526415c23968666)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchCount (Sim: 2457541 vs Cap: 2468973)`
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 2)`
+    - `[data] Value Mismatch: keywordType (Sim: FOOD vs Cap: )`
+    - `[data] Value Mismatch: ixid (Sim: 5889cc7c-69f9-4a5b-a4e1-8aee5f733e46 vs Cap: 000085b5-0bc1-357b-4e94-b4c539c8af9b)`
+    - `[extra] Value Mismatch: pvId (Sim: 16278422 vs Cap: 226884042)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchCount (Sim: 2457541 vs Cap: 2468973)`
+    - `[data] Value Mismatch: searchViewType (Sim:  vs Cap: LIST)`
+    - `[data] Value Mismatch: rank (Sim:  vs Cap: 34)`
+    - `[data] Value Mismatch: deliveryBadge (Sim: ROCKET_INSTALL vs Cap: ROCKET_MERCHANT)`
+    - `[data] Value Mismatch: productId (Sim: 9165103429 vs Cap: 9158522812)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: itemId (Sim: 26985333472 vs Cap: 26975668679)`
+    - `[data] Missing Key: rocketType (Expected: ROCKET_MERCHANT_V3)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 93954117782 vs Cap: 93944527930)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim: ROCKET_INSTALL vs Cap: ROCKET_MERCHANT,TOMORROW)`
+    - `[data] Value Mismatch: searchRank (Sim: 19 vs Cap: 8)`
+    - `[data] Missing Key: q (Expected: 소파)`
+    - `[data] Missing Key: internalCategoryId (Expected: 77903)`
+    - `[data] Missing Key: id (Expected: 9158522812)`
+    - `[data] Missing Key: itemProductId (Expected: 4)`
+    - `[extra] Value Mismatch: abGroups (Sim: NOT_APPLICABLE,B,B vs Cap: B)`
+    - `[extra] Value Mismatch: catalogBrandName (Sim: 필웰 vs Cap: Tomarsy)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 8 vs Cap: 10)`
+    - `[extra] Value Mismatch: deliveryBadge (Sim: ROCKET_INSTALL vs Cap: ROCKET_MERCHANT)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (1) vs Cap: (2))`
+    - `[extra] Value Mismatch: abTestIds (Sim: 95462,89678,96194 vs Cap: 89678)`
+    - `[extra] Value Mismatch: llmRootBrandName (Sim: 해피코 vs Cap: tomarsy)`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: rank (Sim: 0 vs Cap: 18)`
+    - `[data] Value Mismatch: dynamicPricingValueNudgeType (Sim:  vs Cap: lowestpricein7days)`
+    - `[data] Value Mismatch: itemId (Sim: 25045301238 vs Cap: 25459651531)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: viewType (Sim:  vs Cap: BRICK_PRODUCT_UNIT_LIST_UPROTOCOL_M2)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 94446686474 vs Cap: 92452650998)`
+    - `[data] Value Mismatch: searchRank (Sim: 0 vs Cap: 16)`
+    - `[data] Value Mismatch: salesPricePrefix (Sim:  vs Cap: 할인)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: hasDiscount (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (692))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: source (Sim:  vs Cap: srp)`
+    - `[data] Value Mismatch: isSalesPricePrefixVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 3)`
+    - `[data] Value Mismatch: availableColorChipType (Sim:  vs Cap: Color Image)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Home)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Furniture & Storage)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: 5889cc7c-69f9-4a5b-a4e1-8aee5f733e46 vs Cap: 000085b5-0bc1-357b-4e94-b4c539c8af9b)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T19:39:10.800+0900 vs Cap: 2026-01-12T15:09:22.265+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 125,820원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 3)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET_MERCHANT)`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 2371)`
+    - `[data] Value Mismatch: productId (Sim: 8632623405 vs Cap: 8756895140)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: brandId (Sim:  vs Cap: 114350)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 243)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET_MERCHANT,TOMORROW)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: originalPriceString (Sim:  vs Cap: 206,790원)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isOriginalPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 내일(화) 도착 )`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: rocketType (Sim:  vs Cap: ROCKET_MERCHANT_V3)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Home)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 5.0)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productDeliveryBenefitGroup (Sim:  vs Cap: 무료배송)`
+    - `[extra] Value Mismatch: isFashionQuery (Sim: False vs Cap: false)`
+    - `[extra] Missing Key: exposedAttributesAvailable (Expected: 다크 그린)`
+    - `[extra] Missing Key: dawnDeliveryEnabled (Expected: false)`
+    - `[extra] Missing Key: similarProduct (Expected: false)`
+    - `[extra] Missing Key: pddMessage (Expected: 내일(화) 도착 )`
+    - `[extra] Missing Key: abGroups (Expected: B,A,NOT_APPLICABLE,NOT_APPLICABLE)`
+    - `[extra] Missing Key: economicOptionAvailable (Expected: false)`
+    - `[extra] Missing Key: catalogBrandName (Expected: FONOW)`
+    - `[extra] Missing Key: hasMultipleImages (Expected: false)`
+    - `[extra] Missing Key: titleExcludeAttributeNames (Expected: 다크 그린)`
+    - `[extra] Missing Key: originalTitleStartsWithBrand (Expected: false)`
+    - `[extra] Missing Key: priceInfo (Expected: anchorPrice:206790,salesPrice:149800,finalPrice:125820,20dMinPrice:125820,asisRate:39,tobeRate:0,discountType:goodFinal)`
+    - `[extra] Missing Key: sdpThumbnailImageCount (Expected: 10)`
+    - `[extra] Missing Key: hasLlmBrand (Expected: true)`
+    - `[extra] Missing Key: boldedBrandType (Expected: LLM)`
+    - `[extra] Missing Key: pddTime (Expected: 2026-01-13 23:59:59)`
+    - `[extra] Missing Key: brandInOriginalTitle (Expected: false)`
+    - `[extra] Missing Key: isSamedayDeliveryItem (Expected: false)`
+    - `[extra] Missing Key: isFreeReturnAvailable (Expected: false)`
+    - `[extra] Missing Key: samedayDeliveryEnabled (Expected: false)`
+    - `[extra] Missing Key: ratingCount (Expected: (692))`
+    - `[extra] Missing Key: similarProductWidgetShortcut (Expected: true)`
+    - `[extra] Missing Key: finalTitle (Expected: 아이디어 쇼파 소파베드 다기능 모듈쇼파 1인용 접어식 소파 침대, 다크 그린)`
+    - `[extra] Missing Key: economicOptionVisible (Expected: false)`
+    - `[extra] Missing Key: isFreeDelivery (Expected: true)`
+    - `[extra] Missing Key: originalBrandName (Expected: FONOW)`
+    - `[extra] Missing Key: seeMoreOptionAvailable (Expected: false)`
+    - `[extra] Missing Key: seeMoreOptionVisible (Expected: false)`
+    - `[extra] Missing Key: hasWowBenefit (Expected: false)`
+    - `[extra] Missing Key: abTestIds (Expected: 89678,94952,86688,95462)`
+    - `[extra] Missing Key: originalTitle (Expected: 아이디어 쇼파 소파베드 다기능 모듈쇼파 1인용 접어식 소파 침대)`
+    - `[extra] Missing Key: imageURLs (Expected: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/9cdb/95f72f8adeab7490b791f169ddcdfe68a66cbf985d8271659a9bfb19ed37.jpg.webp)`
+    - `[extra] Missing Key: srpThumbnailImageCount (Expected: 1)`
+    - `[extra] Missing Key: llmRootBrandName (Expected: 아니요)`
+    - `[extra] Missing Key: hasCatalogBrand (Expected: true)`
+    - `[extra] Missing Key: isDawnDeliveryItem (Expected: false)`
+    - `[extra] Missing Key: isBrandEqualToProductName (Expected: false)`
+    - `[extra] Missing Key: ratingAverage (Expected: 5.0)`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 160x160)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 160x160)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 160x160)`
+    - `[extra] Missing Key: titleContent (Expected: 아이디어 쇼파 소파베드 다기능 모듈쇼파 1인용 접어식 소파 침대, 다크 그린)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 42)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 42)`
+    - `[extra] Missing Key: commonViewType (Expected: LIST)`
+    - `[extra] Missing Key: uniqueKey (Expected: d2de2497-c736-4cc5-97c7-11cfc2a2332f:LIST)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: kk85ku35o3hjxt75l0 vs Cap: k1kfug6nbdx1mac26v)`
+    - `[data] Value Mismatch: rank (Sim: 0 vs Cap: 34)`
+    - `[data] Value Mismatch: productId (Sim: 8632623405 vs Cap: 9158522812)`
+    - `[data] Value Mismatch: itemId (Sim: 25045301238 vs Cap: 26975668679)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 94446686474 vs Cap: 93944527930)`
+    - `[data] Value Mismatch: brandId (Sim: -1 vs Cap: 102861)`
+    - `[data] Value Mismatch: brandName (Sim:  vs Cap: tomarsy)`
+    - `[data] Value Mismatch: price (Sim: 10000 vs Cap: 539750)`
+    - `[data] Value Mismatch: finalPrice (Sim: 10000 vs Cap: 539750)`
+    - `[data] Missing Key: manageCode (Expected: FMS_167391_A00886815_1767508465734)`
+    - `[data] Value Mismatch: hasInstantDiscount (Sim: False vs Cap: True)`
+    - `[data] Missing Key: originalPrice (Expected: 890000)`
+    - `[data] Missing Key: salesPrice (Expected: 635000)`
+    - `[data] Missing Key: discountRate (Expected: 39)`
+    - `[data] Value Mismatch: isNoDiscount (Sim: true vs Cap: false)`
+    - `[data] Value Mismatch: rocketType (Sim: COUPANG_GLOBAL vs Cap: ROCKET_MERCHANT_V3)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET_MERCHANT,TOMORROW)`
+    - `[data] Value Mismatch: ratingCount (Sim: 9 vs Cap: 2)`
+    - `[data] Value Mismatch: ratingAverage (Sim: 4.0 vs Cap: 5)`
+    - `[data] Value Mismatch: toggleViewType (Sim: search vs Cap: srp_list)`
+    - `[data] Missing Key: searchRank (Expected: 8)`
+- **Schema 11599**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: productId (Sim: 8632623405 vs Cap: 9158522812)`
+    - `[data] Value Mismatch: itemId (Sim: 25045301238 vs Cap: 26975668679)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 94446686474 vs Cap: 93944527930)`
+    - `[data] Value Mismatch: sdpVisitKey (Sim: kk85ku35o3hjxt75l0 vs Cap: k1kfug6nbdx1mac26v)`
+    - `[data] Value Mismatch: rocketType (Sim: COUPANG_GLOBAL vs Cap: ROCKET_MERCHANT_V3)`
+    - `[data] Missing Key: originalPrice (Expected: 890000)`
+    - `[data] Missing Key: salesPrice (Expected: 635000)`
+    - `[data] Value Mismatch: finalPrice (Sim: 10000 vs Cap: 539750)`
+    - `[data] Value Mismatch: ynInstantDiscount (Sim: no vs Cap: yes)`
+    - `[data] Value Mismatch: sdpHandlerClickType (Sim: cancel vs Cap: add_to_cart)`
+
+## Scenario 2: 알부민 (Product: 8729498536)
+- **Sim Dir**: `210345_알부민_8729498536`
+- **Capture**: `알부민-8729498536-6.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: 02e163e7762112 vs Cap: bd00ce9c3322107)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: searchCount (Sim: 10978 vs Cap: 10840)`
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 18)`
+    - `[data] Value Mismatch: ixid (Sim: 218af4f1-aaca-4abd-b0f7-138b0db623ab vs Cap: 000085cf-409c-73b0-be95-35cc0c2b552f)`
+    - `[extra] Value Mismatch: pvId (Sim: 80061675 vs Cap: 95290617)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchCount (Sim: 10978 vs Cap: 10840)`
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: rank (Sim: 9 vs Cap: 6)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 93537342886 vs Cap: 93687948109)`
+    - `[data] Value Mismatch: searchRank (Sim: 7 vs Cap: 6)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 73137)`
+    - `[extra] Missing Key: remainingStockQty (Expected: 2)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 1 vs Cap: 2)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (858) vs Cap: (855))`
+    - `[extra] Missing Key: lowStockQtyCategory (Expected: equal/less than 5)`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: 1)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: adIcon (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: rank (Sim: 1 vs Cap: 7)`
+    - `[data] Value Mismatch: isNoDiscount (Sim:  vs Cap: True)`
+    - `[data] Value Mismatch: itemId (Sim: 20395470704 vs Cap: 26563552189)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: viewType (Sim: BRICK_PRODUCT_UNIT_LIST_UPROTOCOL_M2 vs Cap: BRICK_PRODUCT_UNIT_GRID_UPROTOCOL_M2)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 87764504706 vs Cap: 93708950616)`
+    - `[data] Value Mismatch: searchRank (Sim: 0 vs Cap: 5)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: isDiscountRateVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (823))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Meal & Healthy)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Healthy food)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: 218af4f1-aaca-4abd-b0f7-138b0db623ab vs Cap: 000085cf-409c-73b0-be95-35cc0c2b552f)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:03:49.656+0900 vs Cap: 2026-01-12T15:11:13.142+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBadDiscount (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 19,800원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET_MERCHANT)`
+    - `[data] Value Mismatch: unitPrice (Sim:  vs Cap: (1정당 165원))`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 1418)`
+    - `[data] Value Mismatch: productId (Sim: 7658305855 vs Cap: 9050834782)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: brandId (Sim:  vs Cap: 82821)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 406)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET_MERCHANT,TOMORROW)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: originalPriceString (Sim:  vs Cap: 30,000원)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isOriginalPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 내일(화) 도착 )`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: rocketType (Sim:  vs Cap: ROCKET_MERCHANT_V3)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Meal & Healthy)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 5.0)`
+    - `[data] Value Mismatch: isUnitPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productDeliveryBenefitGroup (Sim:  vs Cap: 무료배송)`
+    - `[extra] Value Mismatch: exposedAttributesAvailable (Sim: 60개,20ml vs Cap: 1개,120정)`
+    - `[extra] Value Mismatch: dawnDeliveryEnabled (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,NOT_APPLICABLE,B,NOT_APPLICABLE,NOT_APPLICABLE vs Cap: B,NOT_APPLICABLE,B,A,NOT_APPLICABLE,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: catalogBrandName (Sim: 오스틴제약 vs Cap: 랩온랩)`
+    - `[extra] Value Mismatch: titleExcludeAttributeNames (Sim: 60개,20ml vs Cap: 1개,120정)`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:258000,salesPrice:158000,finalPrice:158000,20dMinPrice:158000,asisRate:38,tobeRate:0,discountType:noDiscount vs Cap: anchorPrice:30000,salesPrice:19800,finalPrice:19800,20dMinPrice:18810,asisRate:34,tobeRate:0,discountType:noDiscount)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 9 vs Cap: 5)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (698) vs Cap: (823))`
+    - `[extra] Value Mismatch: finalTitle (Sim: 오스틴제약 마시는 알부민 영묘사향 프리미엄 600, 60개, 20ml vs Cap: 랩온랩 해마 알부민 골드 맥스, 1개, 120정)`
+    - `[extra] Value Mismatch: originalBrandName (Sim: 오스틴제약 vs Cap: 랩온랩)`
+    - `[extra] Value Mismatch: abTestIds (Sim: 88757,96074,89678,94952,86688 vs Cap: 88757,96074,89678,94952,96194,86688)`
+    - `[extra] Value Mismatch: originalTitle (Sim: 오스틴제약 마시는 알부민 영묘사향 프리미엄 600 vs Cap: 랩온랩 해마 알부민 골드 맥스)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/599d/67ec579a4f04720aba22bc9e38b4bbde8dc61f7fa1d35c44daf6a2fae3f7.jpg.webp vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/292f/431564fc016edff40be9f3d9bfef13984969473b66a87a610a918a0faac1.jpg.webp)`
+    - `[extra] Value Mismatch: isDawnDeliveryItem (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: ratingAverage (Sim: 4.5 vs Cap: 5.0)`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 187x187)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 173x187)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 192x192)`
+    - `[extra] Missing Key: boldedBrandName (Expected: 랩온랩)`
+    - `[extra] Missing Key: titleContent (Expected: 랩온랩 해마 알부민 골드 맥스, 1개, 120정)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 27)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 27)`
+    - `[extra] Missing Key: commonViewType (Expected: GRID_2)`
+    - `[extra] Missing Key: uniqueKey (Expected: 5ca54f81-2ea7-4f0c-8a07-aa8c68d2a5c7:GRID_2)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: uxs57jfkocpsuv1u9w vs Cap: ghkhck5lpq4kzfh32h)`
+    - `[data] Value Mismatch: rank (Sim: 9 vs Cap: 6)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 93537342886 vs Cap: 93687948109)`
+    - `[data] Value Mismatch: price (Sim: 78780 vs Cap: 77900)`
+    - `[data] Value Mismatch: finalPrice (Sim: 78780 vs Cap: 77900)`
+    - `[data] Value Mismatch: finalUnitPrice (Sim: (1정당 2,626원) vs Cap: (1정당 2,597원))`
+    - `[data] Value Mismatch: ratingCount (Sim: 858 vs Cap: 855)`
+    - `[data] Value Mismatch: toggleViewType (Sim: search vs Cap: srp_grid)`
+    - `[data] Missing Key: searchRank (Expected: 6)`
+- **Schema 11599**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: vendorItemId (Sim: 93537342886 vs Cap: 93687948109)`
+    - `[data] Value Mismatch: sdpVisitKey (Sim: uxs57jfkocpsuv1u9w vs Cap: ghkhck5lpq4kzfh32h)`
+    - `[data] Value Mismatch: finalPrice (Sim: 78780 vs Cap: 77900)`
+
+## Scenario 3: 발매트 (Product: 8454902195)
+- **Sim Dir**: `200140_발매트_8454902195`
+- **Capture**: `발매트-8454902195-83.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: edd22e6b5367684 vs Cap: 9098d2b63602203)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchCount (Sim: 759754 vs Cap: 760204)`
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 1)`
+    - `[data] Value Mismatch: keywordType (Sim: FOOD vs Cap: )`
+    - `[data] Value Mismatch: ixid (Sim: d6d6e807-1259-4446-a09c-95482d670ba6 vs Cap: 0000860c-447c-b891-d236-c312dd2c7142)`
+    - `[extra] Value Mismatch: pvId (Sim: 91494471 vs Cap: 179890685)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchCount (Sim: 759754 vs Cap: 760204)`
+    - `[data] Value Mismatch: searchViewType (Sim:  vs Cap: LIST)`
+    - `[data] Value Mismatch: rank (Sim:  vs Cap: 83)`
+    - `[data] Value Mismatch: productId (Sim: 8847585704 vs Cap: 8454902195)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: itemId (Sim: 25789867954 vs Cap: 21392870605)`
+    - `[data] Missing Key: rocketType (Expected: ROCKET_MERCHANT_V3)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 92799348688 vs Cap: 88449566624)`
+    - `[data] Missing Key: rocketDeliveryType (Expected: ROCKET_MERCHANT,TOMORROW)`
+    - `[data] Value Mismatch: searchRank (Sim: 0 vs Cap: 5)`
+    - `[data] Missing Key: deliveryValueType (Expected: ROCKETWOW_OVERNIGHT)`
+    - `[data] Missing Key: q (Expected: 발매트)`
+    - `[data] Missing Key: internalCategoryId (Expected: 78282)`
+    - `[data] Missing Key: id (Expected: 8454902195)`
+    - `[data] Missing Key: itemProductId (Expected: 4)`
+    - `[extra] Value Mismatch: abGroups (Sim: NOT_APPLICABLE,B vs Cap: B)`
+    - `[extra] Value Mismatch: catalogBrandName (Sim: ErrifY vs Cap: 비기팬시)`
+    - `[extra] Value Mismatch: hasLlmBrand (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 1 vs Cap: 4)`
+    - `[extra] Value Mismatch: boldedBrandType (Sim: Catalog vs Cap: LLM)`
+    - `[extra] Value Mismatch: availableColorChipType (Sim:  vs Cap: Color Image)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (358) vs Cap: (1,040))`
+    - `[extra] Value Mismatch: abTestIds (Sim: 95462,89678 vs Cap: 89678)`
+    - `[extra] Missing Key: llmRootBrandName (Expected: 비기팬시)`
+    - `[extra] Value Mismatch: isDawnDeliveryItem (Sim: false vs Cap: true)`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: rank (Sim: 1 vs Cap: 69)`
+    - `[data] Value Mismatch: itemId (Sim: 25789867954 vs Cap: 27198300476)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: viewType (Sim:  vs Cap: BRICK_PRODUCT_UNIT_LIST_UPROTOCOL_M2)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 92799348688 vs Cap: 92283349584)`
+    - `[data] Value Mismatch: searchRank (Sim: 0 vs Cap: 11)`
+    - `[data] Value Mismatch: salesPricePrefix (Sim:  vs Cap: 쿠폰할인)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: hasDiscount (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (311))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: source (Sim:  vs Cap: srp)`
+    - `[data] Value Mismatch: isSalesPricePrefixVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 3)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Home)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Bedding & Handcraft & Curtain)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: d6d6e807-1259-4446-a09c-95482d670ba6 vs Cap: 0000860c-447c-b891-d236-c312dd2c7142)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T20:01:42.396+0900 vs Cap: 2026-01-12T15:16:07.869+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 9,200원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 3)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET_MERCHANT)`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 5844)`
+    - `[data] Value Mismatch: productId (Sim: 8847585704 vs Cap: 9208486493)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 223)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET_MERCHANT,TOMORROW)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: originalPriceString (Sim:  vs Cap: 19,700원)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isOriginalPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 내일(화) 도착 )`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: rocketType (Sim:  vs Cap: ROCKET_MERCHANT_V3)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Home)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 4.5)`
+    - `[data] Value Mismatch: discountTimer (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[extra] Value Mismatch: exposedAttributesAvailable (Sim: 차콜 vs Cap: 40*60cm 욕실매트)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE vs Cap: B,NOT_APPLICABLE,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: catalogBrandName (Sim: ErrifY vs Cap: Aram)`
+    - `[extra] Value Mismatch: originalTitleStartsWithBrand (Sim: true vs Cap: false)`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:19900,salesPrice:10000,finalPrice:9900,20dMinPrice:9900,asisRate:50,tobeRate:0,discountType:badFinal vs Cap: anchorPrice:19700,salesPrice:19700,finalPrice:9200,20dMinPrice:9200,asisRate:53,tobeRate:0,discountType:goodFinal)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 1 vs Cap: 6)`
+    - `[extra] Value Mismatch: hasLlmBrand (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: boldedBrandType (Sim: Catalog vs Cap: LLM)`
+    - `[extra] Value Mismatch: brandInOriginalTitle (Sim: true vs Cap: false)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (358) vs Cap: (311))`
+    - `[extra] Value Mismatch: finalTitle (Sim: ErrifY 빨아쓰는 발매트 물세탁 화장실 주방, 차콜 vs Cap: Aram 빨아쓰는 돈들어오는 금전수 황금 돈나무 규조토 발매트 집들이 개업선물)`
+    - `[extra] Value Mismatch: abTestIds (Sim: 89678,94952,86688,95462 vs Cap: 89678,94952,86688)`
+    - `[extra] Value Mismatch: originalTitle (Sim: ErrifY 빨아쓰는 발매트 물세탁 화장실 주방 vs Cap: Aram 빨아쓰는 돈들어오는 금전수 황금 돈나무 규조토 발매트 집들이 개업선물)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/ccf3/c31e8be016e59ba51b323bc1a157320aacdcccec30728fa43655425197a9.jpg.webp vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/a8e4/a7ce6fd859d579ca1cac1b46f748e3af511521c9d528b65786617f9df1ca.jpg.webp)`
+    - `[extra] Missing Key: llmRootBrandName (Expected: 아라마가구)`
+    - `[extra] Value Mismatch: ratingAverage (Sim: 5.0 vs Cap: 4.5)`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 160x160)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 160x160)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 160x160)`
+    - `[extra] Missing Key: titleContent (Expected: Aram 빨아쓰는 돈들어오는 금전수 황금 돈나무 규조토 발매트 집들이 개업선물)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 43)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 43)`
+    - `[extra] Missing Key: commonViewType (Expected: LIST)`
+    - `[extra] Missing Key: uniqueKey (Expected: 0155eac8-d4b2-4f61-8094-41c48c648624:LIST)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: 4lqdtpa7c6q73rdsn0 vs Cap: 252cm5domteewa02in)`
+    - `[data] Value Mismatch: rank (Sim: 1 vs Cap: 83)`
+    - `[data] Value Mismatch: productId (Sim: 8847585704 vs Cap: 8454902195)`
+    - `[data] Value Mismatch: itemId (Sim: 25789867954 vs Cap: 21392870605)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 92799348688 vs Cap: 88449566624)`
+    - `[data] Value Mismatch: brandId (Sim: 117085 vs Cap: 101253)`
+    - `[data] Value Mismatch: brandName (Sim: 에러파이 vs Cap: 비기팬시)`
+    - `[data] Value Mismatch: price (Sim: 9900 vs Cap: 8900)`
+    - `[data] Value Mismatch: finalPrice (Sim: 9900 vs Cap: 8900)`
+    - `[data] Value Mismatch: hasInstantDiscount (Sim: True vs Cap: False)`
+    - `[data] Value Mismatch: originalPrice (Sim: 19900 vs Cap: 15130)`
+    - `[data] Value Mismatch: discountRate (Sim: 50 vs Cap: 41)`
+    - `[data] Value Mismatch: isNoDiscount (Sim: false vs Cap: true)`
+    - `[data] Value Mismatch: ratingCount (Sim: 358 vs Cap: 1040)`
+    - `[data] Value Mismatch: ratingAverage (Sim: 5.0 vs Cap: 5)`
+    - `[data] Value Mismatch: toggleViewType (Sim: search vs Cap: srp_list)`
+    - `[data] Value Mismatch: currentWidget (Sim: handlebar vs Cap: bottom_button)`
+    - `[data] Missing Key: searchRank (Expected: 5)`
+- **Schema 11599**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: productId (Sim: 8847585704 vs Cap: 8454902195)`
+    - `[data] Value Mismatch: itemId (Sim: 25789867954 vs Cap: 21392870605)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 92799348688 vs Cap: 88449566624)`
+    - `[data] Value Mismatch: sdpVisitKey (Sim: 4lqdtpa7c6q73rdsn0 vs Cap: 252cm5domteewa02in)`
+    - `[data] Value Mismatch: originalPrice (Sim: 19900 vs Cap: 15130)`
+    - `[data] Value Mismatch: finalPrice (Sim: 9900 vs Cap: 8900)`
+    - `[data] Value Mismatch: ynInstantDiscount (Sim: yes vs Cap: no)`
+
+## Scenario 4: 생수 (Product: 7689270513)
+- **Sim Dir**: `210400_생수_7689270513`
+- **Capture**: `생수-7689270513-7.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: 5e00dcfa5541847 vs Cap: aa495e8674509)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 0)`
+    - `[data] Value Mismatch: ixid (Sim: 4d942414-207b-4066-9bc4-228a129b7abe vs Cap: 00009673-dd18-6adc-a8a3-1fc4fdcae505)`
+    - `[extra] Value Mismatch: pvId (Sim: 96800572 vs Cap: 138853897)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: rank (Sim: 11 vs Cap: 7)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 58759)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,B,NOT_APPLICABLE,A vs Cap: B,B,NOT_APPLICABLE,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (252,174) vs Cap: (252,141))`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: 1)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: adIcon (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: rank (Sim: 2 vs Cap: 1)`
+    - `[data] Value Mismatch: isNoDiscount (Sim:  vs Cap: True)`
+    - `[data] Value Mismatch: itemId (Sim: 9133866797 vs Cap: 9133866800)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: viewType (Sim: BRICK_PRODUCT_UNIT_LIST_UPROTOCOL_M2 vs Cap: BRICK_PRODUCT_UNIT_GRID_UPROTOCOL_M2)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 79544780492 vs Cap: 79544780507)`
+    - `[data] Value Mismatch: searchRank (Sim: 1 vs Cap: 0)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: isDiscountRateVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (1,482,544))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Beverages)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Water)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: 4d942414-207b-4066-9bc4-228a129b7abe vs Cap: 00009673-dd18-6adc-a8a3-1fc4fdcae505)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:04:06.080+0900 vs Cap: 2026-01-12T20:15:57.424+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBadDiscount (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 6,740원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 1)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: unitPrice (Sim:  vs Cap: (100ml당 28원))`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 1449)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: brandId (Sim:  vs Cap: 33408)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 419)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET,TOMORROW)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: originalPriceString (Sim:  vs Cap: 9,980원)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isOriginalPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 내일(화) 도착 )`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: rocketType (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Beverages)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 5.0)`
+    - `[data] Value Mismatch: isUnitPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: badges (Sim:  vs Cap: COU_PICK)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productDeliveryBenefitGroup (Sim:  vs Cap: 와우는 ,무료배송, • ,무료반품)`
+    - `[extra] Value Mismatch: exposedAttributesAvailable (Sim: 500ml,40개 vs Cap: 2L,12개)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,NOT_APPLICABLE,B,NOT_APPLICABLE,NOT_APPLICABLE vs Cap: B,NOT_APPLICABLE,B,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: titleExcludeAttributeNames (Sim: 500ml,40개 vs Cap: 2L,12개)`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:12980,salesPrice:8590,finalPrice:8590,20dMinPrice:3590,asisRate:33,tobeRate:0,discountType:noDiscount vs Cap: anchorPrice:9980,salesPrice:6740,finalPrice:6740,20dMinPrice:3740,asisRate:32,tobeRate:0,discountType:noDiscount)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (1,482,575) vs Cap: (1,482,544))`
+    - `[extra] Value Mismatch: finalTitle (Sim: 탐사수 무라벨, 500ml, 40개 vs Cap: 탐사수 무라벨, 2L, 12개)`
+    - `[extra] Value Mismatch: abTestIds (Sim: 88757,96074,89678,94952,86688 vs Cap: 88757,96074,89678,94952,96194,86688)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/retail/images/9201864858934831-7e4253f9-391a-458d-bd66-b591309922c5.crdownload vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/1025_amir_coupang_oct_80k/fa0a/15993fa52e5975bdcdf2b36d55906022ae19f494938d899e11c921f7a33a.jpg.webp)`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 187x187)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 175x187)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 192x192)`
+    - `[extra] Missing Key: titleContent (Expected: 탐사수 무라벨, 2L, 12개)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 16)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 16)`
+    - `[extra] Missing Key: commonViewType (Expected: GRID_2)`
+    - `[extra] Missing Key: uniqueKey (Expected: 44cabe4d-12d9-47ca-b0c3-ee611debe3bd:GRID_2)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: 20dh4h6groi2ctw36v vs Cap: jf3ngs4uzysfli6gma)`
+    - `[data] Value Mismatch: rank (Sim: 11 vs Cap: 7)`
+    - `[data] Missing Key: rocketDeliveryType (Expected: ROCKET,TOMORROW)`
+    - `[data] Value Mismatch: ratingCount (Sim: 252174 vs Cap: 252141)`
+    - `[data] Value Mismatch: ratingAverage (Sim: 5.0 vs Cap: 5)`
+    - `[data] Value Mismatch: toggleViewType (Sim: search vs Cap: srp_grid)`
+    - `[data] Missing Key: searchRank (Expected: 7)`
+- **Schema 11599**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: 20dh4h6groi2ctw36v vs Cap: jf3ngs4uzysfli6gma)`
+
+## Scenario 5: 신라면 (Product: 9146806481)
+- **Sim Dir**: `210036_신라면_9146806481`
+- **Capture**: `신라면-9146806481-13.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: 67960b5e405609 vs Cap: f0227b156881329)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 1)`
+    - `[data] Value Mismatch: keywordType (Sim: FOOD, FASHION_BRAND_KEYWORD vs Cap: FOOD)`
+    - `[data] Value Mismatch: ixid (Sim: aa9579d5-7ed7-4b6f-9339-4b602007125b vs Cap: 00009680-28f2-7ddd-d605-b302449b7ce7)`
+    - `[extra] Value Mismatch: pvId (Sim: 33209138 vs Cap: 69375908)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: rank (Sim: 20 vs Cap: 13)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: searchRank (Sim: 16 vs Cap: 13)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 58646)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,NOT_APPLICABLE,NOT_APPLICABLE vs Cap: B,C,NOT_APPLICABLE)`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: 1)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: rank (Sim: 1 vs Cap: 9)`
+    - `[data] Value Mismatch: itemId (Sim: 1035120754 vs Cap: 27414794175)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: viewType (Sim: BRICK_PRODUCT_UNIT_LIST_UPROTOCOL_M2 vs Cap: BRICK_PRODUCT_UNIT_GRID_UPROTOCOL_M2)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 3000987832 vs Cap: 94330059612)`
+    - `[data] Value Mismatch: searchRank (Sim: 0 vs Cap: 8)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (371))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Meal & Healthy)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Meal Essentials)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: aa9579d5-7ed7-4b6f-9339-4b602007125b vs Cap: 00009680-28f2-7ddd-d605-b302449b7ce7)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:00:38.776+0900 vs Cap: 2026-01-12T20:16:54.837+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 4,490원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 1)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: unitPrice (Sim:  vs Cap: (1개당 1,123원))`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 1172)`
+    - `[data] Value Mismatch: productId (Sim: 7958974 vs Cap: 9264507739)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: brandId (Sim:  vs Cap: 20858)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 397)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET,TOMORROW)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 내일(화) 도착 )`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: rocketType (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Meal & Healthy)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 4.5)`
+    - `[data] Value Mismatch: isUnitPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productDeliveryBenefitGroup (Sim:  vs Cap: 와우는 ,무료배송, • ,무료반품, • ,새벽도착)`
+    - `[extra] Value Mismatch: exposedAttributesAvailable (Sim: 10개 vs Cap: 4개)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,NOT_APPLICABLE,B,NOT_APPLICABLE,NOT_APPLICABLE vs Cap: B,C,B,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: titleExcludeAttributeNames (Sim: 10개 vs Cap: 4개)`
+    - `[extra] Value Mismatch: originalTitleStartsWithBrand (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:8200,salesPrice:8200,finalPrice:7470,20dMinPrice:6300,asisRate:8,tobeRate:0,discountType:goodFinal vs Cap: anchorPrice:null,salesPrice:4490,finalPrice:4490,20dMinPrice:2310,asisRate:0,tobeRate:0,discountType:noDiscount)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 2 vs Cap: 4)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (749,903) vs Cap: (371))`
+    - `[extra] Value Mismatch: finalTitle (Sim: 농심 신라면 120g, 10개 vs Cap: 신라면 골드 125g, 4개)`
+    - `[extra] Value Mismatch: abTestIds (Sim: 88757,96074,89678,94952,86688 vs Cap: 88757,96074,89678,94952,96194,86688)`
+    - `[extra] Value Mismatch: originalTitle (Sim: 농심 신라면 120g vs Cap: 신라면 골드 125g)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/retail/images/208939972743394-7bb6f6eb-32bb-403c-8379-38d8b9422539.jpg.webp vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/retail/images/2025/12/18/10/0/0f341ac7-29cf-46dc-aaea-31be4d31f53e.jpg.webp)`
+    - `[extra] Value Mismatch: ratingAverage (Sim: 5.0 vs Cap: 4.5)`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 187x187)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 150x187)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 192x192)`
+    - `[extra] Missing Key: boldedBrandName (Expected: 신라면)`
+    - `[extra] Missing Key: titleContent (Expected: 신라면 골드 125g)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 12)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 12)`
+    - `[extra] Missing Key: commonViewType (Expected: GRID_2)`
+    - `[extra] Missing Key: uniqueKey (Expected: 6c6e6023-979a-4ff0-b905-36351c1166f5:GRID_2)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: lzqbi1dse91auzvg7j vs Cap: pgotcntg2i8vd0ib83)`
+    - `[data] Value Mismatch: rank (Sim: 20 vs Cap: 13)`
+    - `[data] Missing Key: rocketDeliveryType (Expected: )`
+    - `[data] Value Mismatch: ratingAverage (Sim: 5.0 vs Cap: 5)`
+    - `[data] Value Mismatch: toggleViewType (Sim: search vs Cap: srp_grid)`
+    - `[data] Missing Key: searchRank (Expected: 13)`
+- **Schema 11599**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: lzqbi1dse91auzvg7j vs Cap: pgotcntg2i8vd0ib83)`
+
+## Scenario 6: 햇반 (Product: 7757579141)
+- **Sim Dir**: `210041_햇반_7757579141`
+- **Capture**: `햇반-7757579141-12.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: 0f29c6084616368 vs Cap: 7485ccdb6896707)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 1)`
+    - `[data] Value Mismatch: keywordType (Sim: FOOD, FASHION_BRAND_KEYWORD vs Cap: FOOD)`
+    - `[data] Value Mismatch: ixid (Sim: cf68b8c9-5605-4db2-be96-f308932491fd vs Cap: 0000968c-4a7f-2c59-0143-df42f60994d1)`
+    - `[extra] Value Mismatch: pvId (Sim: 16116665 vs Cap: 233872421)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: rank (Sim: 0 vs Cap: 12)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: itemId (Sim: 24449750975 vs Cap: 16188638711)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 93082045789 vs Cap: 3064140291)`
+    - `[data] Missing Key: rocketMarketType (Expected: rm_parent_core)`
+    - `[data] Value Mismatch: searchRank (Sim: 0 vs Cap: 12)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 73054)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,B,NOT_APPLICABLE vs Cap: B,B,NOT_APPLICABLE,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: hasLlmBrand (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 6 vs Cap: 8)`
+    - `[extra] Value Mismatch: boldedBrandType (Sim: Catalog vs Cap: LLM)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (77,089) vs Cap: (77,087))`
+    - `[extra] Value Mismatch: abTestIds (Sim: 88757,89678,96074 vs Cap: 88757,89678,96074,96194)`
+    - `[extra] Missing Key: llmRootBrandName (Expected: cj)`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: 1)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: rank (Sim: 0 vs Cap: 12)`
+    - `[data] Value Mismatch: isNoDiscount (Sim:  vs Cap: True)`
+    - `[data] Value Mismatch: itemId (Sim: 24449750975 vs Cap: 16059698868)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: viewType (Sim: BRICK_PRODUCT_UNIT_LIST_UPROTOCOL_M2 vs Cap: BRICK_PRODUCT_UNIT_GRID_UPROTOCOL_M2)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 93082045789 vs Cap: 81917799353)`
+    - `[data] Value Mismatch: searchRank (Sim: 0 vs Cap: 9)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: isDiscountRateVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (394,834))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Meal & Healthy)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Meal Essentials)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: cf68b8c9-5605-4db2-be96-f308932491fd vs Cap: 0000968c-4a7f-2c59-0143-df42f60994d1)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:00:44.058+0900 vs Cap: 2026-01-12T20:17:46.936+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBadDiscount (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 33,370원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 1)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: unitPrice (Sim:  vs Cap: (100g당 441원))`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 1172)`
+    - `[data] Value Mismatch: productId (Sim: 7757579141 vs Cap: 7235457880)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: brandId (Sim:  vs Cap: 100)`
+    - `[data] Value Mismatch: rocketMarketType (Sim:  vs Cap: rm_parent_core)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 423)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET,TOMORROW)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: originalPriceString (Sim:  vs Cap: 41,940원)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isOriginalPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 내일(화) 도착 )`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: rocketType (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Meal & Healthy)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 5.0)`
+    - `[data] Value Mismatch: isUnitPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productDeliveryBenefitGroup (Sim:  vs Cap: 무료배송)`
+    - `[extra] Value Mismatch: exposedAttributesAvailable (Sim: 130g,15개 vs Cap: 210g,36개)`
+    - `[extra] Value Mismatch: dawnDeliveryEnabled (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,NOT_APPLICABLE,B,NOT_APPLICABLE,NOT_APPLICABLE vs Cap: B,NOT_APPLICABLE,B,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: catalogBrandName (Sim: 햇반 vs Cap: 오뚜기)`
+    - `[extra] Value Mismatch: titleExcludeAttributeNames (Sim: 130g,15개 vs Cap: 210g,36개)`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:20500,salesPrice:13000,finalPrice:13000,20dMinPrice:11750,asisRate:36,tobeRate:0,discountType:noDiscount vs Cap: anchorPrice:41940,salesPrice:33370,finalPrice:33370,20dMinPrice:28680,asisRate:20,tobeRate:0,discountType:noDiscount)`
+    - `[extra] Value Mismatch: hasLlmBrand (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: boldedBrandType (Sim: Catalog vs Cap: LLM)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (77,089) vs Cap: (394,834))`
+    - `[extra] Value Mismatch: similarProductWidgetShortcut (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: finalTitle (Sim: 햇반 백미밥 작은 공기, 130g, 15개 vs Cap: 오뚜기 흰밥, 210g, 36개)`
+    - `[extra] Value Mismatch: originalBrandName (Sim: 햇반 vs Cap: 오뚜기)`
+    - `[extra] Value Mismatch: seeMoreOptionAvailable (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: abTestIds (Sim: 88757,96074,89678,94952,86688 vs Cap: 88757,96074,89678,94952,96194,86688)`
+    - `[extra] Value Mismatch: originalTitle (Sim: 햇반 백미밥 작은 공기 vs Cap: 오뚜기 흰밥)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/retail/images/13421638447924-de028dd2-5c3b-4270-997f-e4f425aa0402.jpg.webp vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/retail/images/1111277748154060-6bb65383-8961-40b0-a23f-ffb228c646a0.jpg.webp)`
+    - `[extra] Missing Key: llmRootBrandName (Expected: 오뚜기)`
+    - `[extra] Value Mismatch: isDawnDeliveryItem (Sim: false vs Cap: true)`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 187x187)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 187x182)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 192x192)`
+    - `[extra] Missing Key: boldedBrandName (Expected: 오뚜기)`
+    - `[extra] Missing Key: titleContent (Expected: 오뚜기 흰밥, 210g, 36개)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 18)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 18)`
+    - `[extra] Missing Key: commonViewType (Expected: GRID_2)`
+    - `[extra] Missing Key: uniqueKey (Expected: 0dba0a48-fe4b-4dab-9cc7-eae34d21376d:GRID_2)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: abmva7nzc2sjvaslrj vs Cap: e11sfe3d8frrhsn17r)`
+    - `[data] Value Mismatch: rank (Sim: 0 vs Cap: 12)`
+    - `[data] Value Mismatch: itemId (Sim: 24449750975 vs Cap: 16188638711)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 93082045789 vs Cap: 3064140291)`
+    - `[data] Value Mismatch: price (Sim: 13000 vs Cap: 28250)`
+    - `[data] Value Mismatch: finalPrice (Sim: 13000 vs Cap: 28250)`
+    - `[data] Value Mismatch: originalPrice (Sim: 20500 vs Cap: 54000)`
+    - `[data] Value Mismatch: finalUnitPrice (Sim: (100g당 667원) vs Cap: (100g당 604원))`
+    - `[data] Value Mismatch: discountRate (Sim: 36 vs Cap: 47)`
+    - `[data] Value Mismatch: ratingCount (Sim: 77089 vs Cap: 77087)`
+    - `[data] Value Mismatch: ratingAverage (Sim: 5.0 vs Cap: 5)`
+    - `[data] Value Mismatch: toggleViewType (Sim: search vs Cap: srp_grid)`
+    - `[data] Missing Key: searchRank (Expected: 12)`
+- **Schema 11599**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: itemId (Sim: 24449750975 vs Cap: 16188638711)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 93082045789 vs Cap: 3064140291)`
+    - `[data] Value Mismatch: sdpVisitKey (Sim: abmva7nzc2sjvaslrj vs Cap: e11sfe3d8frrhsn17r)`
+    - `[data] Value Mismatch: originalPrice (Sim: 20500 vs Cap: 54000)`
+    - `[data] Value Mismatch: finalPrice (Sim: 13000 vs Cap: 28250)`
+
+## Scenario 7: 닭가슴살 (Product: 7260940221)
+- **Sim Dir**: `210046_닭가슴살_7260940221`
+- **Capture**: `닭가슴살-7260940221-1.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: 41c3ce0e406908 vs Cap: dbd78ba75753701)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 2)`
+    - `[data] Value Mismatch: ixid (Sim: f9242824-bd07-460b-9384-f56992e2ed9b vs Cap: 00009698-b108-c23d-1813-a864fbf8abcd)`
+    - `[extra] Value Mismatch: pvId (Sim: 92738347 vs Cap: 18514769)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: rank (Sim: 2 vs Cap: 1)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 110351)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (22,715) vs Cap: (22,713))`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: 1)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: adIcon (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: itemId (Sim: 20247916836 vs Cap: 26266178263)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: viewType (Sim: BRICK_PRODUCT_UNIT_LIST_UPROTOCOL_M2 vs Cap: BRICK_PRODUCT_UNIT_GRID_UPROTOCOL_M2)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 87336051821 vs Cap: 93228576557)`
+    - `[data] Value Mismatch: salesPricePrefix (Sim:  vs Cap: 쿠폰할인)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: hasDiscount (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (1,107))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isSalesPricePrefixVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: f9242824-bd07-460b-9384-f56992e2ed9b vs Cap: 00009698-b108-c23d-1813-a864fbf8abcd)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:00:49.404+0900 vs Cap: 2026-01-12T20:18:42.223+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 15,900원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: unitPrice (Sim:  vs Cap: (100g당 1,590원))`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 5695)`
+    - `[data] Value Mismatch: productId (Sim: 7629937513 vs Cap: 8973838084)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: brandId (Sim:  vs Cap: 11957)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 418)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: originalPriceString (Sim:  vs Cap: 39,000원)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isOriginalPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 모레(수) 도착 예정)`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Fresh Food)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 4.5)`
+    - `[data] Value Mismatch: isUnitPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productDeliveryBenefitGroup (Sim:  vs Cap: 무료배송)`
+    - `[extra] Value Mismatch: exposedAttributesAvailable (Sim: 100g,30개 vs Cap: 100g,10개)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,A,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE vs Cap: B,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: catalogBrandName (Sim: 열두닭 vs Cap: 맛있닭)`
+    - `[extra] Value Mismatch: titleExcludeAttributeNames (Sim: 100g,30개 vs Cap: 100g,10개)`
+    - `[extra] Value Mismatch: originalTitleStartsWithBrand (Sim: true vs Cap: false)`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:63000,salesPrice:42500,finalPrice:42500,20dMinPrice:39960,asisRate:32,tobeRate:0,discountType:noDiscount vs Cap: anchorPrice:39000,salesPrice:24500,finalPrice:15900,20dMinPrice:15800,asisRate:59,tobeRate:0,discountType:goodFinal)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 1 vs Cap: 7)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (2,705) vs Cap: (1,107))`
+    - `[extra] Value Mismatch: finalTitle (Sim: 열두닭 오븐으로만 조리한 닭가슴살 오리지널 훈제맛, 100g, 30개 vs Cap: [랭킹닭컴] 맛있닭 소스 통 닭가슴살 5종 혼합, 100g, 10개)`
+    - `[extra] Missing Key: originalBrandName (Expected: 맛있닭)`
+    - `[extra] Value Mismatch: abTestIds (Sim: 88757,94799,96074,94952,86688 vs Cap: 88757,96074,94952,86688)`
+    - `[extra] Value Mismatch: originalTitle (Sim: 열두닭 오븐으로만 조리한 닭가슴살 오리지널 훈제맛 vs Cap: [랭킹닭컴] 맛있닭 소스 통 닭가슴살 5종 혼합)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/e931/a6431ce88b57b5c9805815cee25d6c55f95f9b765a433b7c14f2ecb1040b.jpg.webp vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/image_audit/prod/ed29a0de-fbe2-40d9-a50f-90a68b819c52_fixing_v2.png.webp)`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 187x187)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 150x187)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 192x192)`
+    - `[extra] Missing Key: boldedBrandName (Expected: 맛있닭)`
+    - `[extra] Missing Key: titleContent (Expected: [랭킹닭컴] 맛있닭 소스 통 닭가슴살 5종 혼합, 100g, 10개)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 39)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 39)`
+    - `[extra] Missing Key: commonViewType (Expected: GRID_2)`
+    - `[extra] Missing Key: uniqueKey (Expected: 9bcd7dc2-d86a-42a1-b894-dd29964afa64:GRID_2)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: q68vap8o16y9kynww6 vs Cap: una0wuaolfv7szlt51)`
+    - `[data] Value Mismatch: rank (Sim: 2 vs Cap: 1)`
+    - `[data] Missing Key: rocketDeliveryType (Expected: )`
+    - `[data] Value Mismatch: ratingCount (Sim: 22715 vs Cap: 22713)`
+    - `[data] Value Mismatch: ratingAverage (Sim: 5.0 vs Cap: 5)`
+    - `[data] Value Mismatch: toggleViewType (Sim: search vs Cap: srp_grid)`
+    - `[data] Missing Key: searchRank (Expected: 1)`
+- **Schema 11599**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: q68vap8o16y9kynww6 vs Cap: una0wuaolfv7szlt51)`
+
+## Scenario 8: 쌀 20kg (Product: 9239347733)
+- **Sim Dir**: `210438_쌀_20kg_9239347733`
+- **Capture**: `쌀_20kg-9239347733-12.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: 69f0d1fd4719748 vs Cap: 249e55531398356)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 1)`
+    - `[data] Value Mismatch: ixid (Sim: b912c36e-41d2-47a0-9922-2e86ccf09072 vs Cap: 000096a5-eeee-122f-2bd2-a5f33d6ff029)`
+    - `[extra] Value Mismatch: pvId (Sim: 31131530 vs Cap: 87055285)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: rank (Sim: 15 vs Cap: 12)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 59262)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (12,928) vs Cap: (12,927))`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: 1)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: rank (Sim: 1 vs Cap: 2)`
+    - `[data] Value Mismatch: isNoDiscount (Sim:  vs Cap: True)`
+    - `[data] Value Mismatch: itemId (Sim: 3430305550 vs Cap: 478240947)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: viewType (Sim: BRICK_PRODUCT_UNIT_LIST_UPROTOCOL_M2 vs Cap: BRICK_PRODUCT_UNIT_GRID_UPROTOCOL_M2)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 71416822749 vs Cap: 4200250120)`
+    - `[data] Value Mismatch: searchRank (Sim: 0 vs Cap: 1)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: isDiscountRateVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (558,213))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Fresh Food)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Dried & Frozen Produce)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: b912c36e-41d2-47a0-9922-2e86ccf09072 vs Cap: 000096a5-eeee-122f-2bd2-a5f33d6ff029)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:04:42.168+0900 vs Cap: 2026-01-12T20:19:35.489+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBadDiscount (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 64,890원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: unitPrice (Sim:  vs Cap: (100g당 324원))`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 5671)`
+    - `[data] Value Mismatch: productId (Sim: 2016625157 vs Cap: 166996432)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: brandId (Sim:  vs Cap: 42595)`
+    - `[data] Value Mismatch: rocketMarketType (Sim:  vs Cap: rm_parent_core)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 437)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET,TOMORROW)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: originalPriceString (Sim:  vs Cap: 82,900원)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isOriginalPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 내일(화) 도착 )`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: rocketType (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Fresh Food)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 5.0)`
+    - `[data] Value Mismatch: isUnitPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: badges (Sim:  vs Cap: COU_PICK)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productDeliveryBenefitGroup (Sim:  vs Cap: 무료배송)`
+    - `[extra] Value Mismatch: exposedAttributesAvailable (Sim: 상등급,20kg,1개 vs Cap: 20kg (상등급),1개)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,NOT_APPLICABLE,B,NOT_APPLICABLE,NOT_APPLICABLE vs Cap: B,NOT_APPLICABLE,B,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: catalogBrandName (Sim: 더담은 vs Cap: 곰곰)`
+    - `[extra] Value Mismatch: titleExcludeAttributeNames (Sim: 상등급,20kg,1개 vs Cap: 20kg (상등급),1개)`
+    - `[extra] Value Mismatch: originalTitleStartsWithBrand (Sim: true vs Cap: false)`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:85900,salesPrice:64900,finalPrice:64900,20dMinPrice:64900,asisRate:24,tobeRate:0,discountType:noDiscount vs Cap: anchorPrice:82900,salesPrice:64890,finalPrice:64890,20dMinPrice:62890,asisRate:21,tobeRate:0,discountType:noDiscount)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 1 vs Cap: 7)`
+    - `[extra] Value Mismatch: hasLlmBrand (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: boldedBrandType (Sim: Catalog vs Cap: LLM)`
+    - `[extra] Missing Key: highlightedKeywordsAvailable (Expected: 쌀,20kg)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (71,620) vs Cap: (558,213))`
+    - `[extra] Value Mismatch: similarProductWidgetShortcut (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: finalTitle (Sim: 더담은 황금빛식탁 백미, 상등급, 20kg, 1개 vs Cap: 2025년산 햅쌀 곰곰 소중한 우리쌀, 20kg (상등급), 1개)`
+    - `[extra] Value Mismatch: originalBrandName (Sim: 더담은 vs Cap: 곰곰)`
+    - `[extra] Value Mismatch: seeMoreOptionAvailable (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: abTestIds (Sim: 88757,96074,89678,94952,86688 vs Cap: 88757,96074,89678,94952,96194,86688)`
+    - `[extra] Value Mismatch: originalTitle (Sim: 더담은 황금빛식탁 백미 vs Cap: 2025년산 햅쌀 곰곰 소중한 우리쌀)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/d6fc/2a8f4c6417f22da9b6c1a60899117872b0e59eeeb560ee1efeae86c11aec.jpg.webp vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/retail/images/7199156280747958-a98eedba-5969-4c4a-abf0-febde51cc366.jpg.webp)`
+    - `[extra] Missing Key: llmRootBrandName (Expected: 곰곰출판사)`
+    - `[extra] Value Mismatch: ratingAverage (Sim: 4.5 vs Cap: 5.0)`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 187x187)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 129x187)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 192x192)`
+    - `[extra] Missing Key: boldedBrandName (Expected: 곰곰)`
+    - `[extra] Missing Key: titleContent (Expected: 2025년산 햅쌀 곰곰 소중한 우리쌀, 20kg (상등급), 1개)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 35)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 35)`
+    - `[extra] Missing Key: commonViewType (Expected: GRID_2)`
+    - `[extra] Missing Key: uniqueKey (Expected: 9828b569-46a4-4a99-8acc-fed7c9887d01:GRID_2)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: siyhrj140p65rg8nde vs Cap: 4d3mlwdwimv5yc0dbq)`
+    - `[data] Value Mismatch: rank (Sim: 15 vs Cap: 12)`
+    - `[data] Missing Key: rocketDeliveryType (Expected: )`
+    - `[data] Value Mismatch: ratingCount (Sim: 12928 vs Cap: 12927)`
+    - `[data] Value Mismatch: ratingAverage (Sim: 5.0 vs Cap: 5)`
+    - `[data] Value Mismatch: toggleViewType (Sim: search vs Cap: srp_grid)`
+    - `[data] Missing Key: searchRank (Expected: 12)`
+- **Schema 11599**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: siyhrj140p65rg8nde vs Cap: 4d3mlwdwimv5yc0dbq)`
+
+## Scenario 9: 김치 (Product: 1357034912)
+- **Sim Dir**: `210057_김치_1357034912`
+- **Capture**: `김치-1357034912-2.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: c5df99927215627 vs Cap: 351e467b4411605)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 0)`
+    - `[data] Value Mismatch: ixid (Sim: 7a477b44-2acd-426e-8f87-76268fa2e15b vs Cap: 000096b4-d21d-b954-d726-7f41f55a5c23)`
+    - `[extra] Value Mismatch: pvId (Sim: 84097379 vs Cap: 198722461)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: rank (Sim: 4 vs Cap: 2)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 109807)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,B,NOT_APPLICABLE,D vs Cap: B,B,C,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (35,780) vs Cap: (35,778))`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: 1)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: adIcon (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: rank (Sim: 2 vs Cap: 5)`
+    - `[data] Value Mismatch: itemId (Sim: 17319879727 vs Cap: 26408318490)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: viewType (Sim: BRICK_PRODUCT_UNIT_LIST_UPROTOCOL_M2 vs Cap: BRICK_PRODUCT_UNIT_GRID_UPROTOCOL_M2)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 84490613956 vs Cap: 93384417940)`
+    - `[data] Value Mismatch: searchRank (Sim: 1 vs Cap: 4)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (61))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Chilled & Frozen)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Side dish & RTE)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: 7a477b44-2acd-426e-8f87-76268fa2e15b vs Cap: 000096b4-d21d-b954-d726-7f41f55a5c23)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:01:00.652+0900 vs Cap: 2026-01-12T20:20:39.644+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 11,900원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 1)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET_FRESH)`
+    - `[data] Value Mismatch: unitPrice (Sim:  vs Cap: (100g당 992원))`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 8165)`
+    - `[data] Value Mismatch: productId (Sim: 7769994860 vs Cap: 9009729766)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: brandId (Sim:  vs Cap: 11325)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 413)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET_FRESH)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: 3)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 내일(화) 새벽 도착 )`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: True)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Chilled & Frozen)`
+    - `[data] Value Mismatch: isFreshGuaranteeBadgeEligible (Sim:  vs Cap: yes)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 5.0)`
+    - `[data] Value Mismatch: isUnitPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: badges (Sim:  vs Cap: stockRemainingInfo)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productDeliveryBenefitGroup (Sim:  vs Cap: 품질보장)`
+    - `[extra] Value Mismatch: originalTitleStartsWithBrand (Sim: true vs Cap: false)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,NOT_APPLICABLE,B,NOT_APPLICABLE,D,NOT_APPLICABLE vs Cap: B,C,B,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: catalogBrandName (Sim: 종가 vs Cap: 양반)`
+    - `[extra] Missing Key: remainingStockMessage (Expected: 단 3개 남음 빨리 주문하세요!)`
+    - `[extra] Missing Key: pastPurchaseCount (Expected: )`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:16900,salesPrice:15800,finalPrice:15800,20dMinPrice:12510,asisRate:6,tobeRate:0,discountType:noDiscount vs Cap: anchorPrice:null,salesPrice:11900,finalPrice:11900,20dMinPrice:10900,asisRate:0,tobeRate:0,discountType:noDiscount)`
+    - `[extra] Missing Key: remainingStockQty (Expected: 3)`
+    - `[extra] Value Mismatch: originalBadges (Sim: COU_PICK,bestAwards vs Cap: stockRemainingInfo)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (72,851) vs Cap: (61))`
+    - `[extra] Value Mismatch: finalTitle (Sim: 종가 맛김치, 1.2kg, 1개 vs Cap: 동원 양반 열무김치, 1.2kg, 1개)`
+    - `[extra] Missing Key: lowStockQtyCategory (Expected: equal/less than 5)`
+    - `[extra] Value Mismatch: originalBrandName (Sim: 종가 vs Cap: 양반)`
+    - `[extra] Value Mismatch: originalTitle (Sim: 종가 맛김치 vs Cap: 동원 양반 열무김치)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/retail/images/314933899420630-a3435408-4215-4913-89e1-0fe331bbe605.jpg.webp vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/rs_quotation_api/e8hbqsbj/32b38a691f084058a6212ee28f014807.jpg.webp)`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 187x187)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 187x187)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 192x192)`
+    - `[extra] Missing Key: boldedBrandName (Expected: 양반)`
+    - `[extra] Missing Key: titleContent (Expected: 동원 양반 열무김치)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 12)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 12)`
+    - `[extra] Missing Key: commonViewType (Expected: GRID_2)`
+    - `[extra] Missing Key: uniqueKey (Expected: a502a533-817e-4bfd-a72d-371320b44db8:GRID_2)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ❌ MISSING in Capture
+- **Schema 11599**: ❌ MISSING in Capture
+
+## Scenario 10: 물티슈 (Product: 8548508229)
+- **Sim Dir**: `210450_물티슈_8548508229`
+- **Capture**: `물티슈-8548508229-6.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: da2af39c4649773 vs Cap: e5a21fc87318688)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: searchCount (Sim: 290396 vs Cap: 290397)`
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 1)`
+    - `[data] Value Mismatch: keywordType (Sim: FOOD vs Cap: )`
+    - `[data] Value Mismatch: ixid (Sim: bb55fcd6-4000-413d-9de5-da08f49398a5 vs Cap: 000096c7-83fd-0386-4159-d770af972651)`
+    - `[extra] Value Mismatch: pvId (Sim: 35735820 vs Cap: 230208824)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchCount (Sim: 290396 vs Cap: 290397)`
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: rank (Sim: 7 vs Cap: 6)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 76872)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,B,A,NOT_APPLICABLE vs Cap: B,B,NOT_APPLICABLE,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (54,654) vs Cap: (54,646))`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: 1)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: rank (Sim: 1 vs Cap: 8)`
+    - `[data] Value Mismatch: isNoDiscount (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: itemId (Sim: 23266594500 vs Cap: 24016421537)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: true)`
+    - `[data] Value Mismatch: viewType (Sim: BRICK_PRODUCT_UNIT_LIST_UPROTOCOL_M2 vs Cap: BRICK_PRODUCT_UNIT_GRID_UPROTOCOL_M2)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 90298957832 vs Cap: 91133970706)`
+    - `[data] Value Mismatch: searchRank (Sim: 0 vs Cap: 7)`
+    - `[data] Value Mismatch: salesPricePrefix (Sim:  vs Cap: 할인)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (4,390))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isSalesPricePrefixVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Household)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Tissue)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: bb55fcd6-4000-413d-9de5-da08f49398a5 vs Cap: 000096c7-83fd-0386-4159-d770af972651)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:04:52.909+0900 vs Cap: 2026-01-12T20:22:02.288+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBadDiscount (Sim:  vs Cap: True)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 13,790원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: unitPrice (Sim:  vs Cap: (10매당 69원))`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 5740)`
+    - `[data] Value Mismatch: productId (Sim: 8161005570 vs Cap: 8342279145)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 407)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: originalPriceString (Sim:  vs Cap: 19,900원)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isOriginalPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 1/20 도착 예정)`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Baby Core)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 4.5)`
+    - `[data] Value Mismatch: isUnitPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productDeliveryBenefitGroup (Sim:  vs Cap: 무료배송)`
+    - `[extra] Value Mismatch: exposedAttributesAvailable (Sim: 50g,100매,10개 vs Cap: 230g,100매입,20개)`
+    - `[extra] Value Mismatch: pddMessage (Sim: 내일(화) 도착  vs Cap: 1/20 도착 예정)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,A,B,A,NOT_APPLICABLE vs Cap: B,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: catalogBrandName (Sim: 브라운라이프 vs Cap: 가드데이)`
+    - `[extra] Value Mismatch: titleExcludeAttributeNames (Sim: 50g,100매,10개 vs Cap: 230g,100매입,20개)`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:20900,salesPrice:11900,finalPrice:11900,20dMinPrice:10500,asisRate:43,tobeRate:0,discountType:noDiscount vs Cap: anchorPrice:19900,salesPrice:14790,finalPrice:13790,20dMinPrice:10790,asisRate:30,tobeRate:0,discountType:badFinal)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 10 vs Cap: 6)`
+    - `[extra] Value Mismatch: hasLlmBrand (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: boldedBrandType (Sim: Catalog vs Cap: LLM)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (10,642) vs Cap: (4,390))`
+    - `[extra] Value Mismatch: similarProductWidgetShortcut (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: finalTitle (Sim: 브라운라이프 베이지 도톰한 대용량 엠보싱 저자극 아기물티슈 캡형, 50g, 100매, 10개 vs Cap: 가드데이 프리미엄 정제수 휴대용 물티슈 캡형, 230g, 100매입, 20개)`
+    - `[extra] Value Mismatch: seeMoreOptionAvailable (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: abTestIds (Sim: 88757,96074,89678,94952,86688 vs Cap: 88757,96074,94952,96194,86688)`
+    - `[extra] Value Mismatch: originalTitle (Sim: 브라운라이프 베이지 도톰한 대용량 엠보싱 저자극 아기물티슈 캡형 vs Cap: 가드데이 프리미엄 정제수 휴대용 물티슈 캡형)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/retail/images/899427974880089-80985274-dfdc-47ee-b288-df894f1ed716.jpg.webp vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/ec30/75f3a4261733aac200e8b0fec9f5b712a011fe75a2d7f468c15cf4017056.jpg.webp)`
+    - `[extra] Missing Key: llmRootBrandName (Expected: 가드데이)`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 187x187)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 187x177)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 192x192)`
+    - `[extra] Missing Key: titleContent (Expected: 가드데이 프리미엄 정제수 휴대용 물티슈 캡형, 230g, 100매입, 20개)`
+    - `[extra] Missing Key: applySystemFontSize (Expected: APPLY)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 42)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 34)`
+    - `[extra] Missing Key: commonViewType (Expected: GRID_2)`
+    - `[extra] Missing Key: uniqueKey (Expected: 20963693-3d6d-4b57-bddd-75d084aab862:GRID_2)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: w84ebawjy4qmkvicpd vs Cap: k8ca0ly428r0zm5750)`
+    - `[data] Value Mismatch: rank (Sim: 7 vs Cap: 6)`
+    - `[data] Missing Key: rocketDeliveryType (Expected: ROCKET,TOMORROW)`
+    - `[data] Value Mismatch: ratingCount (Sim: 54654 vs Cap: 54646)`
+    - `[data] Value Mismatch: ratingAverage (Sim: 5.0 vs Cap: 5)`
+    - `[data] Value Mismatch: toggleViewType (Sim: search vs Cap: srp_grid)`
+    - `[data] Missing Key: searchRank (Expected: 6)`
+- **Schema 11599**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: w84ebawjy4qmkvicpd vs Cap: k8ca0ly428r0zm5750)`
+
+## Scenario 11: 휴지 (Product: 307020051)
+- **Sim Dir**: `210455_휴지_307020051`
+- **Capture**: `휴지-307020051-13.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: e5a9dbdf5884211 vs Cap: bc421f0a8550244)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 1)`
+    - `[data] Value Mismatch: ixid (Sim: f0cc1318-b066-4206-b9f5-286a646a33a1 vs Cap: 000096d4-a446-06fb-0843-75a1933e92ad)`
+    - `[extra] Value Mismatch: pvId (Sim: 85240108 vs Cap: 249815810)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim: best_selling vs Cap: N)`
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: rank (Sim: 3 vs Cap: 13)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: itemId (Sim: 19395560867 vs Cap: 20484538120)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 5375349551 vs Cap: 5375350783)`
+    - `[data] Value Mismatch: searchRank (Sim: 2 vs Cap: 13)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim: True vs Cap: False)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 63901)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,B,C,NOT_APPLICABLE vs Cap: B,B,B,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 9 vs Cap: 6)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (240,105) vs Cap: (240,097))`
+    - `[extra] Value Mismatch: badges (Sim: bestAwards vs Cap: )`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: 1)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: rank (Sim: 1 vs Cap: 7)`
+    - `[data] Value Mismatch: isNoDiscount (Sim:  vs Cap: True)`
+    - `[data] Value Mismatch: itemId (Sim: 12196225924 vs Cap: 17553901185)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: viewType (Sim: BRICK_PRODUCT_UNIT_LIST_UPROTOCOL_M2 vs Cap: BRICK_PRODUCT_UNIT_GRID_UPROTOCOL_M2)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 85326747347 vs Cap: 76365551329)`
+    - `[data] Value Mismatch: searchRank (Sim: 0 vs Cap: 6)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: isDiscountRateVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (99,681))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 3)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Household)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Tissue)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: f0cc1318-b066-4206-b9f5-286a646a33a1 vs Cap: 000096d4-a446-06fb-0843-75a1933e92ad)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:04:57.991+0900 vs Cap: 2026-01-12T20:22:57.272+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBadDiscount (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 15,500원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 3)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: unitPrice (Sim:  vs Cap: (10m당 191원))`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 5740)`
+    - `[data] Value Mismatch: productId (Sim: 6224605496 vs Cap: 6570687310)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: brandId (Sim:  vs Cap: 190)`
+    - `[data] Value Mismatch: rocketMarketType (Sim:  vs Cap: rm_parent_core)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 426)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET,TOMORROW)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: originalPriceString (Sim:  vs Cap: 22,900원)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isOriginalPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 내일(화) 도착 )`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: rocketType (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Household)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 5.0)`
+    - `[data] Value Mismatch: isUnitPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productDeliveryBenefitGroup (Sim:  vs Cap: 와우는 ,무료배송, • ,무료반품)`
+    - `[extra] Value Mismatch: exposedAttributesAvailable (Sim: 30m,30개입,2개 vs Cap: 27m,30롤,1개)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,C,B,NOT_APPLICABLE,NOT_APPLICABLE vs Cap: B,B,B,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: catalogBrandName (Sim: 대왕롤앤롤 vs Cap: 깨끗한나라)`
+    - `[extra] Value Mismatch: titleExcludeAttributeNames (Sim: 30m,30개입,2개 vs Cap: 27m,30롤,1개)`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:41410,salesPrice:24900,finalPrice:22250,20dMinPrice:20020,asisRate:46,tobeRate:0,discountType:goodFinal vs Cap: anchorPrice:22900,salesPrice:15500,finalPrice:15500,20dMinPrice:10360,asisRate:32,tobeRate:0,discountType:noDiscount)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 1 vs Cap: 6)`
+    - `[extra] Value Mismatch: hasLlmBrand (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: boldedBrandType (Sim: Catalog vs Cap: LLM)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (113,964) vs Cap: (99,681))`
+    - `[extra] Value Mismatch: similarProductWidgetShortcut (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: finalTitle (Sim: 대왕롤앤롤 라벤더 3겹 고급롤화장지, 30m, 30개입, 2개 vs Cap: 깨끗한나라 순수 시그니처 천연펄프 3겹 고급롤화장지, 27m, 30롤, 1개)`
+    - `[extra] Value Mismatch: originalBrandName (Sim: 대왕롤앤롤 vs Cap: 깨끗한나라)`
+    - `[extra] Value Mismatch: seeMoreOptionAvailable (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: abTestIds (Sim: 88757,96074,89678,94952,86688 vs Cap: 88757,96074,89678,94952,96194,86688)`
+    - `[extra] Value Mismatch: originalTitle (Sim: 대왕롤앤롤 라벤더 3겹 고급롤화장지 vs Cap: 깨끗한나라 순수 시그니처 천연펄프 3겹 고급롤화장지)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/e344/0f41aec40ecdfc39b621d98d196089a20b739d187b7654f6a4b6fd80d702.jpg.webp vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/retail/images/100331567406296-fdc28fdd-a68f-415e-bb71-b5d79cf89c32.jpg.webp)`
+    - `[extra] Missing Key: llmRootBrandName (Expected: 깨끗한나라)`
+    - `[extra] Value Mismatch: ratingAverage (Sim: 4.5 vs Cap: 5.0)`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 187x187)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 119x187)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 192x192)`
+    - `[extra] Missing Key: boldedBrandName (Expected: 깨끗한나라)`
+    - `[extra] Missing Key: titleContent (Expected: 깨끗한나라 순수 시그니처 천연펄프 3겹 고급롤화장지, 27m, 30롤, 1개)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 43)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 43)`
+    - `[extra] Missing Key: commonViewType (Expected: GRID_2)`
+    - `[extra] Missing Key: uniqueKey (Expected: aeac7549-d5b7-4335-9a25-25e05bbbd3df:GRID_2)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: 7okg9orqwrdokt07io vs Cap: e6xg5tc6j8u6loqz8b)`
+    - `[data] Value Mismatch: rank (Sim: 3 vs Cap: 13)`
+    - `[data] Value Mismatch: itemId (Sim: 19395560867 vs Cap: 20484538120)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 5375349551 vs Cap: 5375350783)`
+    - `[data] Value Mismatch: price (Sim: 20600 vs Cap: 20290)`
+    - `[data] Value Mismatch: finalPrice (Sim: 20600 vs Cap: 20290)`
+    - `[data] Value Mismatch: couponDiscountApplied (Sim:  vs Cap: 20290)`
+    - `[data] Value Mismatch: hasOverThreshCoupon (Sim: False vs Cap: True)`
+    - `[data] Missing Key: originalPrice (Expected: 21290)`
+    - `[data] Missing Key: salesPrice (Expected: 21290)`
+    - `[data] Missing Key: salesUnitPrice (Expected: (10m당 240원))`
+    - `[data] Value Mismatch: finalUnitPrice (Sim: (10m당 254원) vs Cap: (10m당 228원))`
+    - `[data] Missing Key: discountRate (Expected: 4)`
+    - `[data] Value Mismatch: isNoDiscount (Sim: true vs Cap: false)`
+    - `[data] Value Mismatch: ratingCount (Sim: 240105 vs Cap: 240097)`
+    - `[data] Value Mismatch: ratingAverage (Sim: 5.0 vs Cap: 5)`
+    - `[data] Value Mismatch: toggleViewType (Sim: search vs Cap: srp_grid)`
+    - `[data] Missing Key: searchRank (Expected: 13)`
+- **Schema 11599**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: itemId (Sim: 19395560867 vs Cap: 20484538120)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 5375349551 vs Cap: 5375350783)`
+    - `[data] Value Mismatch: sdpVisitKey (Sim: 7okg9orqwrdokt07io vs Cap: e6xg5tc6j8u6loqz8b)`
+    - `[data] Missing Key: originalPrice (Expected: 21290)`
+    - `[data] Missing Key: salesPrice (Expected: 21290)`
+    - `[data] Value Mismatch: finalPrice (Sim: 20600 vs Cap: 20290)`
+    - `[data] Value Mismatch: ynCouponDiscount (Sim: no vs Cap: yes)`
+
+## Scenario 12: 샴푸 (Product: 8208169672)
+- **Sim Dir**: `210500_샴푸_8208169672`
+- **Capture**: `샴푸-8208169672-13.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: e72b33d0691496 vs Cap: 43b91491471507)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 1)`
+    - `[data] Value Mismatch: ixid (Sim: 3a80d0ac-3bd6-4912-9c7a-a24d61647e87 vs Cap: 000096e1-e379-e92a-859e-97449dc4d1b6)`
+    - `[extra] Value Mismatch: pvId (Sim: 13548976 vs Cap: 44132122)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rank (Sim: 15 vs Cap: 13)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 56280)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (36,952) vs Cap: (36,951))`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: rank (Sim: 1 vs Cap: 8)`
+    - `[data] Value Mismatch: isNoDiscount (Sim:  vs Cap: True)`
+    - `[data] Value Mismatch: itemId (Sim: 550015139 vs Cap: 17489242919)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: vendorItemId (Sim: 88352725296 vs Cap: 84656629685)`
+    - `[data] Value Mismatch: searchRank (Sim: 0 vs Cap: 7)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: isDiscountRateVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (44,025))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 3)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Personal Care)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Hair Care)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: 3a80d0ac-3bd6-4912-9c7a-a24d61647e87 vs Cap: 000096e1-e379-e92a-859e-97449dc4d1b6)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:05:03.207+0900 vs Cap: 2026-01-12T20:23:58.826+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBadDiscount (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 30,220원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: unitPrice (Sim:  vs Cap: (100g당 3,022원))`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 1610)`
+    - `[data] Value Mismatch: productId (Sim: 8208108087 vs Cap: 6590298130)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: brandId (Sim:  vs Cap: 34319)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 240)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET,TOMORROW)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: originalPriceString (Sim:  vs Cap: 87,000원)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isOriginalPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 내일(화) 도착 )`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: rocketType (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Personal Care)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 5.0)`
+    - `[data] Value Mismatch: isUnitPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productDeliveryBenefitGroup (Sim:  vs Cap: 무료배송)`
+    - `[extra] Value Mismatch: exposedAttributesAvailable (Sim: 500ml,2개 vs Cap: 500g,2개)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,NOT_APPLICABLE,NOT_APPLICABLE vs Cap: B,NOT_APPLICABLE,A,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: catalogBrandName (Sim: 오가니스트 vs Cap: TS)`
+    - `[extra] Value Mismatch: titleExcludeAttributeNames (Sim: 500ml,2개 vs Cap: 500g,2개)`
+    - `[extra] Value Mismatch: originalTitleStartsWithBrand (Sim: true vs Cap: false)`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:33800,salesPrice:13600,finalPrice:13600,20dMinPrice:10200,asisRate:59,tobeRate:0,discountType:noDiscount vs Cap: anchorPrice:87000,salesPrice:30220,finalPrice:30220,20dMinPrice:24900,asisRate:65,tobeRate:0,discountType:noDiscount)`
+    - `[extra] Value Mismatch: hasLlmBrand (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: boldedBrandType (Sim: Catalog vs Cap: LLM)`
+    - `[extra] Value Mismatch: brandInOriginalTitle (Sim: true vs Cap: false)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (5,994) vs Cap: (44,025))`
+    - `[extra] Value Mismatch: similarProductWidgetShortcut (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: finalTitle (Sim: 오가니스트 히말라야 핑크솔트 스케일링 샴푸, 500ml, 2개 vs Cap: TS 뉴 프리미엄 탈모 증상 완화 기능성 샴푸, 500g, 2개)`
+    - `[extra] Value Mismatch: originalBrandName (Sim: 오가니스트 vs Cap: TS)`
+    - `[extra] Value Mismatch: seeMoreOptionAvailable (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: abTestIds (Sim: 89678,94952,86688 vs Cap: 89678,94952,96194,86688)`
+    - `[extra] Value Mismatch: originalTitle (Sim: 오가니스트 히말라야 핑크솔트 스케일링 샴푸 vs Cap: TS 뉴 프리미엄 탈모 증상 완화 기능성 샴푸)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/retail/images/4929927010519355-83019340-4871-4c0e-b5bd-3fe2831270f4.jpg.webp vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/retail/images/170228686792658-5f012e85-6e17-4abe-bdab-524594e75af3.jpg.webp)`
+    - `[extra] Missing Key: llmRootBrandName (Expected: 파라벤)`
+    - `[extra] Value Mismatch: ratingAverage (Sim: 4.5 vs Cap: 5.0)`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 160x181)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 160x181)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 160x181)`
+    - `[extra] Missing Key: boldedBrandName (Expected: TS)`
+    - `[extra] Missing Key: titleContent (Expected: TS 뉴 프리미엄 탈모 증상 완화 기능성 샴푸, 500g, 2개)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 36)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 36)`
+    - `[extra] Missing Key: commonViewType (Expected: LIST)`
+    - `[extra] Missing Key: uniqueKey (Expected: 5efbfbcf-e1c8-4290-a4ac-82cbb34dd94d:LIST)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: s068ypfw7txmegwb02 vs Cap: ia5hjg13g2zvq93sse)`
+    - `[data] Value Mismatch: rank (Sim: 15 vs Cap: 13)`
+    - `[data] Value Mismatch: toggleViewType (Sim: search vs Cap: srp_list)`
+    - `[data] Missing Key: searchRank (Expected: 13)`
+- **Schema 11599**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: s068ypfw7txmegwb02 vs Cap: ia5hjg13g2zvq93sse)`
+
+## Scenario 13: 기저귀 (Product: 8541087269)
+- **Sim Dir**: `210505_기저귀_8541087269`
+- **Capture**: `기저귀-8541087269-9.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: 2a57beb04969680 vs Cap: 6a9765e75812664)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 2)`
+    - `[data] Value Mismatch: keywordType (Sim: FOOD vs Cap: )`
+    - `[data] Value Mismatch: ixid (Sim: 39d0ed10-84d8-48fc-a119-188072128d02 vs Cap: 00009712-3f3a-585e-14b2-5baa4d86e8f0)`
+    - `[extra] Value Mismatch: pvId (Sim: 61974357 vs Cap: 80485274)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: rank (Sim: 11 vs Cap: 9)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 76852)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,B,NOT_APPLICABLE vs Cap: B,B,NOT_APPLICABLE,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (37,995) vs Cap: (37,993))`
+    - `[extra] Value Mismatch: abTestIds (Sim: 88757,89678,96074 vs Cap: 88757,89678,96074,96194)`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: 1)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: adIcon (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: viewType (Sim: BRICK_PRODUCT_UNIT_LIST_UPROTOCOL_M2 vs Cap: BRICK_PRODUCT_UNIT_GRID_UPROTOCOL_M2)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (7,985))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Baby Core)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Diapering)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: 39d0ed10-84d8-48fc-a119-188072128d02 vs Cap: 00009712-3f3a-585e-14b2-5baa4d86e8f0)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:05:08.701+0900 vs Cap: 2026-01-12T20:27:17.566+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 29,610원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: unitPrice (Sim:  vs Cap: (1개당 370원))`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 59)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: brandId (Sim:  vs Cap: 57957)`
+    - `[data] Value Mismatch: rocketMarketType (Sim:  vs Cap: rm_parent_core)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 402)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET,TOMORROW)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 내일(화) 도착 )`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: rocketType (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Baby Core)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 5.0)`
+    - `[data] Value Mismatch: isUnitPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productDeliveryBenefitGroup (Sim:  vs Cap: 무료배송)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (7,986) vs Cap: (7,985))`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 187x187)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 187x178)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 192x192)`
+    - `[extra] Missing Key: boldedBrandName (Expected: Cooing)`
+    - `[extra] Missing Key: titleContent (Expected: Cooing 베러업 팬티형 기저귀 남녀공용, 점보형(2XL), 80매)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 39)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 39)`
+    - `[extra] Missing Key: commonViewType (Expected: GRID_2)`
+    - `[extra] Missing Key: uniqueKey (Expected: 4e51daa4-b6c0-4acd-9d7e-423845c93a03:GRID_2)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: 6t8rxfjxkzkce05gw7 vs Cap: ttk7otwmesm6gtoxw1)`
+    - `[data] Value Mismatch: rank (Sim: 11 vs Cap: 9)`
+    - `[data] Value Mismatch: ratingCount (Sim: 37995 vs Cap: 37993)`
+    - `[data] Value Mismatch: ratingAverage (Sim: 5.0 vs Cap: 5)`
+    - `[data] Value Mismatch: toggleViewType (Sim: search vs Cap: srp_grid)`
+    - `[data] Missing Key: searchRank (Expected: 9)`
+- **Schema 11599**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: 6t8rxfjxkzkce05gw7 vs Cap: ttk7otwmesm6gtoxw1)`
+
+## Scenario 14: 마스크 (Product: 8562895882)
+- **Sim Dir**: `210128_마스크_8562895882`
+- **Capture**: `마스크-8562895882-1.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: caabdc4d5284236 vs Cap: 53b934ae5995259)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 2)`
+    - `[data] Value Mismatch: ixid (Sim: 2623db11-bfda-4015-b192-ce1f9c01d212 vs Cap: 0000971e-6470-b137-6a7a-15348f461c1a)`
+    - `[data] Value Mismatch: hasProdWColorChips (Sim: False vs Cap: True)`
+    - `[extra] Value Mismatch: pvId (Sim: 11495566 vs Cap: 101440243)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rank (Sim: 2 vs Cap: 1)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 64043)`
+    - `[extra] Missing Key: abGroups (Expected: NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (7,234) vs Cap: (7,233))`
+    - `[extra] Missing Key: abTestIds (Expected: 96194)`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: adIcon (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isNoDiscount (Sim:  vs Cap: True)`
+    - `[data] Value Mismatch: itemId (Sim: 21313387031 vs Cap: 16907894930)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: vendorItemId (Sim: 93497343322 vs Cap: 84085985537)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: isDiscountRateVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (30,064))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 3)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Personal Care)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Health Care)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: 2623db11-bfda-4015-b192-ce1f9c01d212 vs Cap: 0000971e-6470-b137-6a7a-15348f461c1a)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:01:31.479+0900 vs Cap: 2026-01-12T20:28:12.184+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBadDiscount (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 6,990원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 3)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: unitPrice (Sim:  vs Cap: (1개당 70원))`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 1938)`
+    - `[data] Value Mismatch: productId (Sim: 6239313027 vs Cap: 6954365239)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: brandId (Sim:  vs Cap: 35834)`
+    - `[data] Value Mismatch: rocketMarketType (Sim:  vs Cap: rm_parent_core)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 227)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET,TOMORROW)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: originalPriceString (Sim:  vs Cap: 9,080원)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isOriginalPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 내일(화) 도착 )`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: rocketType (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Personal Care)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 5.0)`
+    - `[data] Value Mismatch: isUnitPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productDeliveryBenefitGroup (Sim:  vs Cap: 와우는 ,무료배송, • ,무료반품, • ,새벽도착)`
+    - `[extra] Value Mismatch: exposedAttributesAvailable (Sim: 5개입,20개,블랙 vs Cap: 100개입,1개,화이트)`
+    - `[extra] Missing Key: dawnDeliveryEnabled (Expected: true)`
+    - `[extra] Value Mismatch: pddMessage (Sim: 모레(수) 도착 예정 vs Cap: 내일(화) 도착 )`
+    - `[extra] Value Mismatch: abGroups (Sim: A,NOT_APPLICABLE,NOT_APPLICABLE vs Cap: B,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: catalogBrandName (Sim: TS vs Cap: 코멧)`
+    - `[extra] Value Mismatch: titleExcludeAttributeNames (Sim: 5개입,20개,블랙 vs Cap: 100개입,1개,화이트)`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:19790,salesPrice:19790,finalPrice:18180,20dMinPrice:17220,asisRate:8,tobeRate:0,discountType:goodFinal vs Cap: anchorPrice:9080,salesPrice:6990,finalPrice:6990,20dMinPrice:4990,asisRate:23,tobeRate:0,discountType:noDiscount)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 1 vs Cap: 7)`
+    - `[extra] Missing Key: pddTime (Expected: 2026-01-13 23:59:59)`
+    - `[extra] Missing Key: samedayDeliveryEnabled (Expected: false)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (7,857) vs Cap: (30,064))`
+    - `[extra] Value Mismatch: finalTitle (Sim: TS 가드 티마 컬러 새부리형 마스크 대형 KF94, 5개입, 20개, 블랙 vs Cap: 코멧 소프트 비말차단 마스크 KF-AD 실속형 묶음포장 대형, 100개입, 1개, 화이트)`
+    - `[extra] Value Mismatch: originalBrandName (Sim: TS vs Cap: 코멧)`
+    - `[extra] Value Mismatch: abTestIds (Sim: 94799,94952,86688 vs Cap: 89678,94952,96194,86688)`
+    - `[extra] Value Mismatch: originalTitle (Sim: TS 가드 티마 컬러 새부리형 마스크 대형 KF94 vs Cap: 코멧 소프트 비말차단 마스크 KF-AD 실속형 묶음포장 대형)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/image_audit/stage/manual/e0d7da9923134176bdf02c40936837ff2c8a4d5bef538badce81f3564742_1761902740955.jpg.webp vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/retail/images/672416906663473-39e0ca25-8134-49ae-8d93-1336e0d297b6.jpg.webp)`
+    - `[extra] Value Mismatch: isDawnDeliveryItem (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: ratingAverage (Sim: 4.5 vs Cap: 5.0)`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 160x160)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 160x157)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 160x160)`
+    - `[extra] Missing Key: boldedBrandName (Expected: 코멧)`
+    - `[extra] Missing Key: titleContent (Expected: 코멧 소프트 비말차단 마스크 KF-AD 실속형 묶음포장 대형, 100개입, 1개, 화이트)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 50)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 50)`
+    - `[extra] Missing Key: commonViewType (Expected: LIST)`
+    - `[extra] Missing Key: uniqueKey (Expected: 05961880-7a64-451a-a619-0dcbf4223272:LIST)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: vofi77pgstpy2kaly vs Cap: xseduqvg4t50on9fum)`
+    - `[data] Value Mismatch: rank (Sim: 2 vs Cap: 1)`
+    - `[data] Value Mismatch: ratingCount (Sim: 7234 vs Cap: 7233)`
+    - `[data] Value Mismatch: toggleViewType (Sim: search vs Cap: srp_list)`
+    - `[data] Missing Key: searchRank (Expected: 1)`
+- **Schema 11599**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: vofi77pgstpy2kaly vs Cap: xseduqvg4t50on9fum)`
+
+## Scenario 15: 아이폰 17 (Product: 9024167492)
+- **Sim Dir**: `210134_아이폰_17_9024167492`
+- **Capture**: `아이폰_17-9024167492-0.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: 7c3dbb1e700213 vs Cap: a9996cbf6002383)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 0)`
+    - `[data] Value Mismatch: keywordType (Sim: ELECTRONICS, FASHION_BRAND_KEYWORD vs Cap: ELECTRONICS)`
+    - `[data] Value Mismatch: ixid (Sim: 228a71a8-2833-4056-bb42-9dac46630513 vs Cap: 0000972b-b470-388a-9a24-e2cc1dc96220)`
+    - `[extra] Value Mismatch: pvId (Sim: 54752460 vs Cap: 140458815)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rank (Sim: 1 vs Cap: 0)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: deliveryValueType (Sim: ROCKETDELIVERY_D+1 vs Cap: ROCKETDELIVERY_D+1;ROCKETWOW_OVERNIGHT)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 62600)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,NOT_APPLICABLE vs Cap: B,D)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (3,216) vs Cap: (3,214))`
+    - `[extra] Value Mismatch: isDawnDeliveryItem (Sim: false vs Cap: true)`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: rank (Sim: 1 vs Cap: 4)`
+    - `[data] Value Mismatch: isNoDiscount (Sim:  vs Cap: True)`
+    - `[data] Value Mismatch: itemId (Sim: 26462329849 vs Cap: 26462329864)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: vendorItemId (Sim: 93437609262 vs Cap: 93437609244)`
+    - `[data] Value Mismatch: searchRank (Sim: 0 vs Cap: 3)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: isDiscountRateVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (3,214))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 3)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Computer & Digital)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Cell Phone & Acc.)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: 228a71a8-2833-4056-bb42-9dac46630513 vs Cap: 0000972b-b470-388a-9a24-e2cc1dc96220)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:01:37.180+0900 vs Cap: 2026-01-12T20:29:15.500+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBadDiscount (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 1,251,300원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 4220)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: brandId (Sim:  vs Cap: 42308)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 222)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET,TOMORROW)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: originalPriceString (Sim:  vs Cap: 1,290,000원)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isOriginalPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 내일(화) 도착 )`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: rocketType (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Computer & Digital)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 5.0)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productDeliveryBenefitGroup (Sim:  vs Cap: 무료배송)`
+    - `[extra] Value Mismatch: exposedAttributesAvailable (Sim: 화이트,256GB vs Cap: 세이지,256GB)`
+    - `[extra] Value Mismatch: dawnDeliveryEnabled (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE vs Cap: B,NOT_APPLICABLE,D,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: titleExcludeAttributeNames (Sim: 화이트,256GB vs Cap: 세이지,256GB)`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:1290000,salesPrice:1251300,finalPrice:1251300,20dMinPrice:1251240,asisRate:3,tobeRate:0,discountType:noDiscount vs Cap: anchorPrice:1290000,salesPrice:1251300,finalPrice:1251300,20dMinPrice:1251300,asisRate:3,tobeRate:0,discountType:noDiscount)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (3,216) vs Cap: (3,214))`
+    - `[extra] Value Mismatch: finalTitle (Sim: Apple 아이폰 17 자급제, 화이트, 256GB vs Cap: Apple 아이폰 17 자급제, 세이지, 256GB)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/retail/images/23549401340111-688e83a8-91d7-4371-a10b-41928c1c38e9.jpg.webp vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/retail/images/23706273970919-e1293663-297c-41fd-933a-1b43b92d85dc.jpg.webp)`
+    - `[extra] Value Mismatch: isDawnDeliveryItem (Sim: false vs Cap: true)`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 160x194)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 156x194)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 160x194)`
+    - `[extra] Missing Key: boldedBrandName (Expected: Apple)`
+    - `[extra] Missing Key: titleContent (Expected: Apple 아이폰 17 자급제, 세이지, 256GB)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 26)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 26)`
+    - `[extra] Missing Key: commonViewType (Expected: LIST)`
+    - `[extra] Missing Key: uniqueKey (Expected: bcacf14f-9b7d-453e-9675-8175d061eaa5:LIST)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: e7fztbxvju3x3znpun vs Cap: we6fddgw6l3slc1p3l)`
+    - `[data] Value Mismatch: rank (Sim: 1 vs Cap: 0)`
+    - `[data] Value Mismatch: ratingCount (Sim: 3216 vs Cap: 3214)`
+    - `[data] Value Mismatch: ratingAverage (Sim: 5.0 vs Cap: 5)`
+    - `[data] Value Mismatch: toggleViewType (Sim: search vs Cap: srp_list)`
+    - `[data] Missing Key: searchRank (Expected: 0)`
+- **Schema 11599**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: e7fztbxvju3x3znpun vs Cap: we6fddgw6l3slc1p3l)`
+
+## Scenario 16: 공기청정기 (Product: 8603929492)
+- **Sim Dir**: `210521_공기청정기_8603929492`
+- **Capture**: `공기청정기-8603929492-13.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: 5191e60c5551647 vs Cap: c4f7d2c04433000)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 2)`
+    - `[data] Value Mismatch: ixid (Sim: dc389d92-956d-4488-9cd0-f54512cb792d vs Cap: 0000973a-72f0-0d32-3b80-b2da2cdc72ff)`
+    - `[extra] Value Mismatch: pvId (Sim: 34084181 vs Cap: 186695130)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rank (Sim: 15 vs Cap: 13)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 63362)`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: adIcon (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: rank (Sim: 1 vs Cap: 13)`
+    - `[data] Value Mismatch: isNoDiscount (Sim:  vs Cap: True)`
+    - `[data] Value Mismatch: itemId (Sim: 27106079837 vs Cap: 20328097191)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: vendorItemId (Sim: 94204956124 vs Cap: 87413322189)`
+    - `[data] Value Mismatch: searchRank (Sim: 0 vs Cap: 11)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: True)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: isDiscountRateVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (333))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: couponNudge (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 3)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Electronics)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Seasonal Appliance)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: dc389d92-956d-4488-9cd0-f54512cb792d vs Cap: 0000973a-72f0-0d32-3b80-b2da2cdc72ff)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:05:24.523+0900 vs Cap: 2026-01-12T20:30:28.113+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBadDiscount (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 110,090원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 4225)`
+    - `[data] Value Mismatch: productId (Sim: 9187707370 vs Cap: 7645518022)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: brandId (Sim:  vs Cap: 105368)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 261)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET,TOMORROW)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: originalPriceString (Sim:  vs Cap: 174,680원)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isOriginalPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 내일(화) 도착 )`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: rocketType (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Electronics)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 5.0)`
+    - `[data] Value Mismatch: badges (Sim:  vs Cap: handymanBadge)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productDeliveryBenefitGroup (Sim:  vs Cap: 무료배송)`
+    - `[extra] Value Mismatch: exposedAttributesAvailable (Sim: 화이트 vs Cap: KJ350G-S1,화이트)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE vs Cap: B,A,NOT_APPLICABLE,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: catalogBrandName (Sim: 오투젠 vs Cap: 마이디어)`
+    - `[extra] Value Mismatch: titleExcludeAttributeNames (Sim: 화이트 vs Cap: KJ350G-S1,화이트)`
+    - `[extra] Value Mismatch: originalTitleStartsWithBrand (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:199000,salesPrice:59900,finalPrice:49900,20dMinPrice:47900,asisRate:74,tobeRate:0,discountType:badFinal vs Cap: anchorPrice:174680,salesPrice:110090,finalPrice:110090,20dMinPrice:97220,asisRate:36,tobeRate:0,discountType:noDiscount)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 1 vs Cap: 10)`
+    - `[extra] Value Mismatch: brandInOriginalTitle (Sim: false vs Cap: true)`
+    - `[extra] Missing Key: eligibleExperiments (Expected: 86150)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (145) vs Cap: (333))`
+    - `[extra] Value Mismatch: finalTitle (Sim: 프리미엄 헤파필터 공기청정기 1인가구 가정용 가성비 공기 청정기, 화이트 vs Cap: 마이디어 공기청정기 50㎡, KJ350G-S1, 화이트)`
+    - `[extra] Missing Key: originalBrandName (Expected: 마이디어)`
+    - `[extra] Value Mismatch: originalTitle (Sim: 프리미엄 헤파필터 공기청정기 1인가구 가정용 가성비 공기 청정기 vs Cap: 마이디어 공기청정기 50㎡)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/817d/c540a1d9041d09e31f201d023bb211ed262218d4d6e743a9c6c4a279ddb7.png.webp vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/1302/510c4b261836dd54470db93eb4be06f4bfc9e457d96e0d6c1ddf1d4971e8.jpg.webp)`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 160x202)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 137x202)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 160x202)`
+    - `[extra] Missing Key: boldedBrandName (Expected: 마이디어)`
+    - `[extra] Missing Key: titleContent (Expected: 마이디어 공기청정기 50㎡, KJ350G-S1, 화이트)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 31)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 31)`
+    - `[extra] Missing Key: commonViewType (Expected: LIST)`
+    - `[extra] Missing Key: uniqueKey (Expected: f16b0c19-392b-4944-b7b5-c39240f7f4ec:LIST)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: 3h9el5hjsc7e7tctsh vs Cap: x7gdfjnrpw0xc6610i)`
+    - `[data] Value Mismatch: rank (Sim: 15 vs Cap: 13)`
+    - `[data] Value Mismatch: ratingAverage (Sim: 5.0 vs Cap: 5)`
+    - `[data] Value Mismatch: toggleViewType (Sim: search vs Cap: srp_list)`
+- **Schema 11599**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: 3h9el5hjsc7e7tctsh vs Cap: x7gdfjnrpw0xc6610i)`
+
+## Scenario 17: 무선 이어폰 (Product: 8082654809)
+- **Sim Dir**: `210527_무선_이어폰_8082654809`
+- **Capture**: `무선_이어폰-8082654809-2.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: 0bbb89fe5561838 vs Cap: b145d812149050)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 1)`
+    - `[data] Value Mismatch: ixid (Sim: ded9d5d2-8804-475b-8e7b-3895a31331d6 vs Cap: 0000974c-709c-ce05-22bf-aa64306643fb)`
+    - `[extra] Value Mismatch: pvId (Sim: 90274347 vs Cap: 144962042)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rank (Sim: 4 vs Cap: 2)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: searchRank (Sim: 3 vs Cap: 2)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 62715)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,D vs Cap: B,B)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (19,450) vs Cap: (19,447))`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isNoDiscount (Sim:  vs Cap: True)`
+    - `[data] Value Mismatch: itemId (Sim: 20172350668 vs Cap: 24600675528)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: vendorItemId (Sim: 92290759014 vs Cap: 91612183770)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: True)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: isDiscountRateVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (3,916))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 3)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Computer & Digital)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Digital)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: ded9d5d2-8804-475b-8e7b-3895a31331d6 vs Cap: 0000974c-709c-ce05-22bf-aa64306643fb)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:05:29.883+0900 vs Cap: 2026-01-12T20:31:33.621+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBadDiscount (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 20,900원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 5882)`
+    - `[data] Value Mismatch: productId (Sim: 7614052014 vs Cap: 8498887873)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: brandId (Sim:  vs Cap: 212)`
+    - `[data] Value Mismatch: rocketMarketType (Sim:  vs Cap: rm_parent_core)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 252)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET,TOMORROW)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: originalPriceString (Sim:  vs Cap: 99,000원)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isOriginalPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 내일(화) 도착 )`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: rocketType (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Computer & Digital)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 4.5)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productDeliveryBenefitGroup (Sim:  vs Cap: 무료배송)`
+    - `[extra] Value Mismatch: exposedAttributesAvailable (Sim: 블랙,BOBO&JOJO-711(블랙) vs Cap: TAT1109,화이트)`
+    - `[extra] Value Mismatch: dawnDeliveryEnabled (Sim: false vs Cap: true)`
+    - `[extra] Missing Key: catalogBrandName (Expected: 필립스)`
+    - `[extra] Value Mismatch: titleExcludeAttributeNames (Sim: 블랙,BOBO&JOJO-711(블랙) vs Cap: TAT1109,화이트)`
+    - `[extra] Value Mismatch: originalTitleStartsWithBrand (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:54080,salesPrice:29900,finalPrice:27070,20dMinPrice:26790,asisRate:49,tobeRate:0,discountType:goodFinal vs Cap: anchorPrice:99000,salesPrice:20900,finalPrice:20900,20dMinPrice:18900,asisRate:78,tobeRate:0,discountType:noDiscount)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 9 vs Cap: 8)`
+    - `[extra] Value Mismatch: hasLlmBrand (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: boldedBrandType (Sim:  vs Cap: LLM)`
+    - `[extra] Value Mismatch: brandInOriginalTitle (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (1,786) vs Cap: (3,916))`
+    - `[extra] Value Mismatch: similarProductWidgetShortcut (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: finalTitle (Sim: BOBOJOJO버즈 무선 블루투스 이어폰 방수 스포츠 미니 C Type 이어폰, 블랙, BOBO&JOJO-711(블랙) vs Cap: 필립스 무선 ENC노이즈캔슬링 블루투스 이어폰, TAT1109, 화이트)`
+    - `[extra] Missing Key: originalBrandName (Expected: 필립스)`
+    - `[extra] Value Mismatch: originalTitle (Sim: BOBOJOJO버즈 무선 블루투스 이어폰 방수 스포츠 미니 C Type 이어폰 vs Cap: 필립스 무선 ENC노이즈캔슬링 블루투스 이어폰)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/6470/ff1681337fba73f21b17d72401db0a8c119fbd834423c30ceee6d0b2a5de.png.webp vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/f39b/d95e3c4b7abd45339f82293e8360e23050160d3ebee6ef5723b9b552f293.jpg.webp)`
+    - `[extra] Missing Key: llmRootBrandName (Expected: 필립스)`
+    - `[extra] Value Mismatch: hasCatalogBrand (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: isDawnDeliveryItem (Sim: false vs Cap: true)`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 160x160)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 160x158)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 160x160)`
+    - `[extra] Missing Key: boldedBrandName (Expected: 필립스)`
+    - `[extra] Missing Key: titleContent (Expected: 필립스 무선 ENC노이즈캔슬링 블루투스 이어폰, TAT1109, 화이트)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 37)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 37)`
+    - `[extra] Missing Key: commonViewType (Expected: LIST)`
+    - `[extra] Missing Key: uniqueKey (Expected: 476d0d26-0810-424f-8a53-dd3240f9f08b:LIST)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: u0q2uzo0hb1u30q6m2 vs Cap: bj1ns6l7q5heystuv8)`
+    - `[data] Value Mismatch: rank (Sim: 4 vs Cap: 2)`
+    - `[data] Value Mismatch: ratingCount (Sim: 19450 vs Cap: 19447)`
+    - `[data] Value Mismatch: toggleViewType (Sim: search vs Cap: srp_list)`
+    - `[data] Value Mismatch: bundleQty (Sim: 1 vs Cap: 4)`
+    - `[data] Missing Key: searchRank (Expected: 2)`
+    - `[extra] Value Mismatch: eventReferrer (Sim: sdp_click_duration vs Cap: sdp_atf_image_video_click)`
+- **Schema 11599**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: u0q2uzo0hb1u30q6m2 vs Cap: bj1ns6l7q5heystuv8)`
+
+## Scenario 18: 게이밍 의자 (Product: 9221117836)
+- **Sim Dir**: `210532_게이밍_의자_9221117836`
+- **Capture**: `게이밍_의자-9221117836-3.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: 315a2cd4439845 vs Cap: 85fbb8a84500199)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 9)`
+    - `[data] Value Mismatch: keywordType (Sim: FOOD vs Cap: )`
+    - `[data] Value Mismatch: ixid (Sim: a12bce3c-6346-4d50-aa0c-20732cc94ad3 vs Cap: 0000975b-3adf-c121-713f-cd8b7fa83dee)`
+    - `[extra] Value Mismatch: pvId (Sim: 73183812 vs Cap: 100782200)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rank (Sim: 4 vs Cap: 3)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 112257)`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: rank (Sim: 1 vs Cap: 3)`
+    - `[data] Value Mismatch: itemId (Sim: 27427481106 vs Cap: 26812472887)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: vendorItemId (Sim: 89925016390 vs Cap: 93712087437)`
+    - `[data] Value Mismatch: searchRank (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: salesPricePrefix (Sim:  vs Cap: 할인)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: hasDiscount (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (195))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isSalesPricePrefixVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 3)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Home)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Furniture & Storage)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: a12bce3c-6346-4d50-aa0c-20732cc94ad3 vs Cap: 0000975b-3adf-c121-713f-cd8b7fa83dee)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:05:34.808+0900 vs Cap: 2026-01-12T20:32:43.448+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 53,800원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET_MERCHANT)`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 2371)`
+    - `[data] Value Mismatch: productId (Sim: 8801946324 vs Cap: 9116007471)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 226)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET_MERCHANT,TOMORROW)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: originalPriceString (Sim:  vs Cap: 110,000원)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isOriginalPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 내일(화) 도착 )`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: rocketType (Sim:  vs Cap: ROCKET_MERCHANT_V3)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Home)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 5.0)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productDeliveryBenefitGroup (Sim:  vs Cap: 무료배송)`
+    - `[extra] Missing Key: dawnDeliveryEnabled (Expected: false)`
+    - `[extra] Value Mismatch: pddMessage (Sim: 모레(수) 도착 예정 vs Cap: 내일(화) 도착 )`
+    - `[extra] Value Mismatch: abGroups (Sim: A,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE vs Cap: B,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: catalogBrandName (Sim: 누카 vs Cap: 리보아)`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:441000,salesPrice:329000,finalPrice:329000,20dMinPrice:300600,asisRate:25,tobeRate:0,discountType:noDiscount vs Cap: anchorPrice:110000,salesPrice:71740,finalPrice:53800,20dMinPrice:53459,asisRate:51,tobeRate:0,discountType:goodFinal)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 10 vs Cap: 7)`
+    - `[extra] Value Mismatch: hasLlmBrand (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: boldedBrandType (Sim: Catalog vs Cap: LLM)`
+    - `[extra] Missing Key: pddTime (Expected: 2026-01-13 23:59:59)`
+    - `[extra] Missing Key: samedayDeliveryEnabled (Expected: false)`
+    - `[extra] Value Mismatch: highlightedKeywordsAvailable (Sim: 체어,게이밍 vs Cap: 게이밍,의자)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (142) vs Cap: (195))`
+    - `[extra] Value Mismatch: finalTitle (Sim: 누카 커스텀체어 G900-MS 6D 컴퓨터의자 사무용 사무실 학생 메쉬 게이밍 책상의자, 블랙 vs Cap: 리보아 각도 높이 조절 가능 컴퓨터 게이밍 의자, 블랙)`
+    - `[extra] Value Mismatch: abTestIds (Sim: 94799,94952,86688,95462 vs Cap: 89678,94952,96194,86688,95462)`
+    - `[extra] Value Mismatch: originalTitle (Sim: 누카 커스텀체어 G900-MS 6D 컴퓨터의자 사무용 사무실 학생 메쉬 게이밍 책상의자 vs Cap: 리보아 각도 높이 조절 가능 컴퓨터 게이밍 의자)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/4703/87e669b586aaf4e0c0c1f05ee99c1bb3d53885ed91813c73cd10139c24e7.jpg.webp vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/0be6/a1a39134ccc655f3cc48a333f6446d497b266a6a0cbff6fb62c02e61bb07.jpg.webp)`
+    - `[extra] Missing Key: llmRootBrandName (Expected: 리보아)`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 160x160)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 160x160)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 160x160)`
+    - `[extra] Missing Key: titleContent (Expected: 리보아 각도 높이 조절 가능 컴퓨터 게이밍 의자, 블랙)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 27)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 27)`
+    - `[extra] Missing Key: commonViewType (Expected: LIST)`
+    - `[extra] Missing Key: uniqueKey (Expected: 4f1f7bf3-c2e6-419e-8b48-5238032894f2:LIST)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: 39gzo28e1jb1u9m1qg vs Cap: 5tinxtodkoho43rcm)`
+    - `[data] Value Mismatch: rank (Sim: 4 vs Cap: 3)`
+    - `[data] Value Mismatch: ratingAverage (Sim: 5.0 vs Cap: 5)`
+    - `[data] Value Mismatch: toggleViewType (Sim: search vs Cap: srp_list)`
+    - `[data] Missing Key: searchRank (Expected: 3)`
+- **Schema 11599**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: 39gzo28e1jb1u9m1qg vs Cap: 5tinxtodkoho43rcm)`
+
+## Scenario 19: 운동화 (Product: 8574621265)
+- **Sim Dir**: `210537_운동화_8574621265`
+- **Capture**: `운동화-8574621265-6.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: 7ac688c9417940 vs Cap: 0a7f5ed05347037)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 8)`
+    - `[data] Value Mismatch: keywordType (Sim: FASHION, FASHION_APPAREL, FASHION_SHOES vs Cap: FASHION)`
+    - `[data] Value Mismatch: ixid (Sim: efa50bde-9e7e-427a-87e8-929344c85ed6 vs Cap: 00009770-08cb-a149-82ca-7e35f74808c0)`
+    - `[data] Value Mismatch: hasProdWColorChips (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: hasProdWColorTexts (Sim: False vs Cap: True)`
+    - `[extra] Value Mismatch: pvId (Sim: 25622332 vs Cap: 101712132)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: rank (Sim: 17 vs Cap: 6)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: searchRank (Sim: 12 vs Cap: 6)`
+    - `[data] Missing Key: deliveryValueType (Expected: ROCKETWOW_OVERNIGHT)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 68010)`
+    - `[data] Value Mismatch: itemProductId (Sim: 4 vs Cap: 3)`
+    - `[extra] Value Mismatch: isDawnDeliveryItem (Sim: false vs Cap: true)`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: itemId (Sim: 21247887299 vs Cap: 24293272751)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: true)`
+    - `[data] Value Mismatch: viewType (Sim: BRICK_PRODUCT_UNIT_LIST_UPROTOCOL_M2 vs Cap: BRICK_PRODUCT_UNIT_GRID_UPROTOCOL_M2)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 88846135708 vs Cap: 92516266648)`
+    - `[data] Value Mismatch: searchRank (Sim: 0 vs Cap: 1)`
+    - `[data] Value Mismatch: salesPricePrefix (Sim:  vs Cap: 할인)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: hasDiscount (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (5,169))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isSalesPricePrefixVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 1)`
+    - `[data] Value Mismatch: availableColorChipType (Sim:  vs Cap: Color Image)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Shoes)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: 3)`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Fashion Shoes)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: efa50bde-9e7e-427a-87e8-929344c85ed6 vs Cap: 00009770-08cb-a149-82ca-7e35f74808c0)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:05:40.236+0900 vs Cap: 2026-01-12T20:34:02.612+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 19,790원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 1)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET_MERCHANT)`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 2637)`
+    - `[data] Value Mismatch: productId (Sim: 7821881474 vs Cap: 7945160321)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 352)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET_MERCHANT,TOMORROW)`
+    - `[data] Value Mismatch: colorTextValue (Sim:  vs Cap: +3)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: originalPriceString (Sim:  vs Cap: 57,450원)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isOriginalPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 내일(화) 도착 )`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: rocketType (Sim:  vs Cap: ROCKET_MERCHANT_V3)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Shoes)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 4.0)`
+    - `[data] Value Mismatch: discountTimer (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[extra] Value Mismatch: exposedAttributesAvailable (Sim: 블랙,230 vs Cap: 라이트블루,280)`
+    - `[extra] Value Mismatch: abGroups (Sim: D,A,B,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,B vs Cap: D,B,A,B,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,B)`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:149000,salesPrice:118000,finalPrice:118000,20dMinPrice:99900,asisRate:20,tobeRate:0,discountType:noDiscount vs Cap: anchorPrice:57450,salesPrice:29790,finalPrice:19790,20dMinPrice:17790,asisRate:65,tobeRate:0,discountType:goodFinal)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 4 vs Cap: 5)`
+    - `[extra] Value Mismatch: hasLlmBrand (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: boldedBrandType (Sim: Catalog vs Cap: LLM)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (3,672) vs Cap: (5,169))`
+    - `[extra] Value Mismatch: finalTitle (Sim: 버디 발 편한 메리노울 운동화 vs Cap: 슈페르 발편한 런닝화 남성 운동화)`
+    - `[extra] Value Mismatch: abTestIds (Sim: 95227,91256,89678,95407,94952,86688,93126 vs Cap: 95227,64294,91256,89678,95407,94952,96194,86688,93126)`
+    - `[extra] Value Mismatch: originalTitle (Sim: 르무통 버디 발 편한 메리노울 운동화 vs Cap: 슈페르 발편한 런닝화 남성 운동화)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/656c/040bfb959edac83797b7e4bc4c5b92a404d8514874337da7510c0f2d1018.jpg.webp,https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90ex/image/vendor_inventory/2ae1/814b845b82fc709bf77e7065a8d2b7ddb6a5d2fc91ab5d40a385da580cc4.jpg.webp,https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90ex/image/vendor_inventory/4bf6/3081453e8176ba962d8f1eb21ac4d08c088704344fea676c2a1be76f17a5.jpg.webp vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/08b8/12a3a82b57f0350331757e0b44866ab4155400a3027af6f9f8a71c4d699c.jpg.webp,https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90ex/image/vendor_inventory/594c/71922c1bd3cd6f92a3ae5a99e4ddd863963af973494ca1ccdd6a921e1515.jpg.webp,https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90ex/image/vendor_inventory/7db5/fe2e546192cfcbf1b594f949731e9efd7c5700b650d07dfdb747b571f8a4.jpg.webp)`
+    - `[extra] Missing Key: llmRootBrandName (Expected: 슈페르)`
+    - `[extra] Value Mismatch: hasCatalogBrand (Sim: true vs Cap: false)`
+    - `[extra] Value Mismatch: ratingAverage (Sim: 5.0 vs Cap: 4.0)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 189x189)`
+    - `[extra] Value Mismatch: numberColorChipsVisible (Sim:  vs Cap: 2)`
+    - `[extra] Value Mismatch: colorTextValue (Sim:  vs Cap: +4)`
+    - `[extra] Missing Key: titleContent (Expected: 슈페르 발편한 런닝화 남성 운동화)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 18)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 15)`
+    - `[extra] Missing Key: commonViewType (Expected: GRID_2)`
+    - `[extra] Missing Key: uniqueKey (Expected: 28331318-dc79-49be-873a-9117146a5c52:GRID_2)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ❌ MISSING in Capture
+- **Schema 11599**: ❌ MISSING in Capture
+
+## Scenario 20: 원피스 (Product: 9169321967)
+- **Sim Dir**: `210206_원피스_9169321967`
+- **Capture**: `원피스-9169321967-9.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: 088c7d625287025 vs Cap: b820992b5098067)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: keywordType (Sim: FASHION, FASHION_CLOTHING, FASHION_APPAREL vs Cap: FASHION)`
+    - `[data] Value Mismatch: isGenderTabTest (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: ixid (Sim: 76a580a1-0f73-4412-bf62-29f8cdce1fc6 vs Cap: 00009796-6049-13a7-0149-2557f1107cdd)`
+    - `[data] Value Mismatch: hasProdWColorChips (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: hasProdWColorTexts (Sim: False vs Cap: True)`
+    - `[extra] Value Mismatch: pvId (Sim: 12837971 vs Cap: 61046159)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: rank (Sim: 22 vs Cap: 9)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: searchRank (Sim: 16 vs Cap: 9)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 79386)`
+    - `[data] Value Mismatch: itemProductId (Sim: 4 vs Cap: 3)`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: adIcon (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: rank (Sim: 1 vs Cap: 11)`
+    - `[data] Value Mismatch: itemId (Sim: 21191594734 vs Cap: 24044715021)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: true)`
+    - `[data] Value Mismatch: viewType (Sim: BRICK_PRODUCT_UNIT_LIST_UPROTOCOL_M2 vs Cap: BRICK_PRODUCT_UNIT_GRID_UPROTOCOL_M2)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 88329463944 vs Cap: 91064830714)`
+    - `[data] Value Mismatch: searchRank (Sim: 0 vs Cap: 8)`
+    - `[data] Value Mismatch: salesPricePrefix (Sim:  vs Cap: 할인)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: hasDiscount (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (17))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isSalesPricePrefixVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 1)`
+    - `[data] Value Mismatch: availableColorChipType (Sim:  vs Cap: Color Text)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Apparel)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Casual Clothes)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: 76a580a1-0f73-4412-bf62-29f8cdce1fc6 vs Cap: 00009796-6049-13a7-0149-2557f1107cdd)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:02:09.374+0900 vs Cap: 2026-01-12T20:36:54.032+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 24,800원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 1)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET_MERCHANT)`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 2530)`
+    - `[data] Value Mismatch: productId (Sim: 7811755030 vs Cap: 8328623886)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: brandId (Sim:  vs Cap: 87126)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 381)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET_MERCHANT,TOMORROW)`
+    - `[data] Value Mismatch: colorTextValue (Sim:  vs Cap: +2개 색상)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: originalPriceString (Sim:  vs Cap: 40,400원)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isOriginalPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 내일(화) 도착 )`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: rocketType (Sim:  vs Cap: ROCKET_MERCHANT_V3)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Apparel)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 5.0)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[extra] Value Mismatch: exposedAttributesAvailable (Sim: 2XL vs Cap: YF3011A(눈보라,1세트)`
+    - `[extra] Value Mismatch: dawnDeliveryEnabled (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: abGroups (Sim: D,B,A,B,B,NOT_APPLICABLE,NOT_APPLICABLE,B vs Cap: D,A,B,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,B)`
+    - `[extra] Value Mismatch: catalogBrandName (Sim: 빌리즈빈 vs Cap: 투데이리빙)`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:42000,salesPrice:29000,finalPrice:29000,20dMinPrice:29000,asisRate:30,tobeRate:0,discountType:noDiscount vs Cap: anchorPrice:40400,salesPrice:40010,finalPrice:24800,20dMinPrice:null,asisRate:38,tobeRate:0,discountType:goodFinal)`
+    - `[extra] Missing Key: hadBrandAboveTitle (Expected: true)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 2 vs Cap: 5)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (46) vs Cap: (17))`
+    - `[extra] Value Mismatch: finalTitle (Sim: 빌리즈빈 여성 브이넥 체크무늬 민소매 원피스 5839 vs Cap: 3종 세트 여아 할로윈 의상 엘사 공주 자켓 드레스 A 원피스 옷 아동 가을 겨울 코스튬 공연복 코스프레)`
+    - `[extra] Value Mismatch: originalBrandName (Sim: 빌리즈빈 vs Cap: 투데이리빙)`
+    - `[extra] Value Mismatch: abTestIds (Sim: 95227,64294,91256,89678,95407,94952,86688,93126 vs Cap: 95227,91256,89678,95407,94952,86688,93126)`
+    - `[extra] Value Mismatch: originalTitle (Sim: 빌리즈빈 여성 브이넥 체크무늬 민소매 원피스 5839 vs Cap: 투데이리빙 3종 세트 여아 할로윈 의상 엘사 공주 자켓 드레스 A 원피스 옷 아동 가을 겨울 코스튬 공연복 코스프레)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/image_audit/prod/8c8e38d0-b2ee-4691-9384-736f93358fcc_fixing_v2.png.webp,https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90ex/image/vendor_inventory/aa31/5a60ef6b565fb3f3cb4f82a8e51dc02aa680fb6ee013e1f84c524dc2002e.jpeg.webp vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/3b37/c0dd8ee78707397312a7384c3740a431395667ee67fabb0a84a3b6ed4e9a.jpg.webp,https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90ex/image/vendor_inventory/2bd5/36c30e5c4c2a513fc22b507b9bd6acaf3ac25524f5669b4d839f25b5a54a.jpg.webp,https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90ex/image/vendor_inventory/bec2/0a57dbc91cd17b6ff2a4f0fab91d18c1cbf53be9281071cff707b3b58efd.jpg.webp)`
+    - `[extra] Value Mismatch: srpThumbnailImageCount (Sim: 2 vs Cap: 3)`
+    - `[extra] Value Mismatch: isDawnDeliveryItem (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: ratingAverage (Sim: 4.5 vs Cap: 5.0)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 189x189)`
+    - `[extra] Missing Key: boldedBrandName (Expected: 투데이리빙)`
+    - `[extra] Missing Key: titleContent (Expected: 3종 세트 여아 할로윈 의상 엘사 공주 자켓 드레스 A 원피스 옷 아동 가을 겨울 코스튬 공연복 코스프레)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 58)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 17)`
+    - `[extra] Missing Key: commonViewType (Expected: GRID_2)`
+    - `[extra] Missing Key: uniqueKey (Expected: b04adbf4-c97a-431e-839f-09360fcf2ac3:GRID_2)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ❌ MISSING in Capture
+- **Schema 11599**: ❌ MISSING in Capture
+
+## Scenario 21: 여행용 캐리어 (Product: 9024674138)
+- **Sim Dir**: `210547_여행용_캐리어_9024674138`
+- **Capture**: `여행용_캐리어-9024674138-10.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: 7377b877402620 vs Cap: a382d4da4468214)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_3)`
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 6)`
+    - `[data] Value Mismatch: keywordType (Sim: FASHION, FASHION_APPAREL vs Cap: FASHION)`
+    - `[data] Value Mismatch: ixid (Sim: b98949ee-fbb8-4698-87eb-a93a04ce2eda vs Cap: 000097a9-5ec6-2fc4-5015-d5853da203b8)`
+    - `[data] Value Mismatch: hasProdWColorChips (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: hasProdWColorTexts (Sim: False vs Cap: True)`
+    - `[extra] Value Mismatch: pvId (Sim: 59104564 vs Cap: 151667650)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_3)`
+    - `[data] Value Mismatch: rank (Sim: 16 vs Cap: 10)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: searchRank (Sim: 12 vs Cap: 10)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 69826)`
+    - `[data] Value Mismatch: itemProductId (Sim: 4 vs Cap: 3)`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: rank (Sim: 1 vs Cap: 15)`
+    - `[data] Value Mismatch: itemId (Sim: 24947796644 vs Cap: 26465158650)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: true)`
+    - `[data] Value Mismatch: viewType (Sim: BRICK_PRODUCT_UNIT_LIST_UPROTOCOL_M2 vs Cap: BRICK_PRODUCT_UNIT_TRIPLE_GRID_UPROTOCOL_M2)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 91968182139 vs Cap: 93440396292)`
+    - `[data] Value Mismatch: searchRank (Sim: 0 vs Cap: 10)`
+    - `[data] Value Mismatch: salesPricePrefix (Sim:  vs Cap: 할인)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: hasDiscount (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: True)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (175))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isSalesPricePrefixVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 1)`
+    - `[data] Value Mismatch: availableColorChipType (Sim:  vs Cap: Color Code)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Accessory)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: 3)`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Suitcase)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: b98949ee-fbb8-4698-87eb-a93a04ce2eda vs Cap: 000097a9-5ec6-2fc4-5015-d5853da203b8)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: #EEEDEB,#DFE3E8,#40B340)`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:05:50.457+0900 vs Cap: 2026-01-12T20:38:33.068+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 59,900원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 1)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET_MERCHANT)`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 2595)`
+    - `[data] Value Mismatch: productId (Sim: 8603436997 vs Cap: 9024674138)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: brandLink (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: brandId (Sim:  vs Cap: 109606)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 301)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET_MERCHANT,TOMORROW)`
+    - `[data] Value Mismatch: colorTextValue (Sim:  vs Cap: +2)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: originalPriceString (Sim:  vs Cap: 167,800원)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isOriginalPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: rocketType (Sim:  vs Cap: ROCKET_MERCHANT_V3)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Accessory)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 4.5)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[extra] Value Mismatch: exposedAttributesAvailable (Sim: 20인치,화이트 vs Cap: 14+24인치,화이트)`
+    - `[extra] Value Mismatch: abGroups (Sim: D,A,B,NOT_APPLICABLE,A,NOT_APPLICABLE,B vs Cap: D,NOT_APPLICABLE,A,B,B,A,NOT_APPLICABLE,B)`
+    - `[extra] Value Mismatch: catalogBrandName (Sim: 예투어 vs Cap: swygsqql)`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:300000,salesPrice:99000,finalPrice:99000,20dMinPrice:null,asisRate:67,tobeRate:0,discountType:noDiscount vs Cap: anchorPrice:167800,salesPrice:83900,finalPrice:59900,20dMinPrice:56900,asisRate:64,tobeRate:0,discountType:goodFinal)`
+    - `[extra] Missing Key: hadBrandAboveTitle (Expected: true)`
+    - `[extra] Value Mismatch: hasLlmBrand (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: boldedBrandType (Sim: Catalog vs Cap: LLM)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (7) vs Cap: (175))`
+    - `[extra] Value Mismatch: finalTitle (Sim: 26인치 20인치 캐리어 여행가방 캐리어 대형 앞포켓 금고형 수화물 캐리어 유럽여행 vs Cap: 3년AS 다용도 기내용 캐리어 20인치 24인치 28인치 USB 충전포트 360도 회전바퀴 경량 여행용가방 2종 세트)`
+    - `[extra] Value Mismatch: originalBrandName (Sim: 예투어 vs Cap: swygsqql)`
+    - `[extra] Value Mismatch: abTestIds (Sim: 95227,91256,89678,95407,94952,86688,93126 vs Cap: 95227,93123,91256,89678,95407,94952,86688,93126)`
+    - `[extra] Value Mismatch: originalTitle (Sim: 26인치 20인치 캐리어 여행가방 캐리어 대형 앞포켓 금고형 수화물 캐리어 유럽여행 vs Cap: 3년AS 다용도 기내용 캐리어 20인치 24인치 28인치 USB 충전포트 360도 회전바퀴 경량 여행용가방 2종 세트)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/31cb/d796eaee56dd9637ac16ee92fc004d87762d5efb645b822e9a01ac7bb7e0.jpg.webp,https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90ex/image/vendor_inventory/e935/31630504066952477c59ed10bb1e31fdb8f57f87c8ed6cbc1e615a1a3bfb.jpg.webp,https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90ex/image/vendor_inventory/b79a/47f9e9904d306c12d7c82ca8676b764756e4d9161ea4d61720ed72fd2c4e.jpg.webp vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/3d7d/5b3df943fd47eabeb702dce4f06163180eb66a0e8b38bdbdcbaf2732fb6e.jpg.webp,https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90ex/image/vendor_inventory/5233/2a82f81795174e535f05cfb07ed3b8089207225817a2e0aead326cd884d7.jpg.webp,https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90ex/image/vendor_inventory/652a/9e70106f0892ae17e7ba61b76af55c587d72c2cb51fccc584d8f54105b09.jpg.webp)`
+    - `[extra] Missing Key: llmRootBrandName (Expected: swygsqql)`
+    - `[extra] Value Mismatch: ratingAverage (Sim: 5.0 vs Cap: 4.5)`
+    - `[extra] Missing Key: brandLinkClickable (Expected: true)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 123x123)`
+    - `[extra] Missing Key: titleContent (Expected: 3년AS 다용도 기내용 캐리어 20인치 24인치 28인치 USB 충전포트 360도 회전바퀴 경량 여행용가방 2종 세트)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 65)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 10)`
+    - `[extra] Missing Key: commonViewType (Expected: GRID_3)`
+    - `[extra] Missing Key: uniqueKey (Expected: cf013ef9-cf9d-4c52-bd61-51199fca7bb7:GRID_3)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ❌ MISSING in Capture
+- **Schema 11599**: ❌ MISSING in Capture
+
+## Scenario 22: 고양이 모래 (Product: 7572200473)
+- **Sim Dir**: `210552_고양이_모래_7572200473`
+- **Capture**: `고양이_모래-7572200473-5.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: e00007d24657587 vs Cap: 370e9a414781596)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 1)`
+    - `[data] Value Mismatch: keywordType (Sim: FOOD vs Cap: )`
+    - `[data] Value Mismatch: ixid (Sim: 44b21da7-570d-4f50-8824-f34281c8540b vs Cap: 000097bd-6d21-3396-dbb7-09395705f383)`
+    - `[extra] Value Mismatch: pvId (Sim: 51022234 vs Cap: 33695517)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: rank (Sim: 2 vs Cap: 5)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: itemId (Sim: 19972434630 vs Cap: 19972434626)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 86949316291 vs Cap: 86949316311)`
+    - `[data] Value Mismatch: searchRank (Sim: 0 vs Cap: 5)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 66154)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,NOT_APPLICABLE vs Cap: B,NOT_APPLICABLE,C)`
+    - `[extra] Value Mismatch: hasLlmBrand (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: boldedBrandType (Sim: Catalog vs Cap: LLM)`
+    - `[extra] Value Mismatch: abTestIds (Sim: 88757,96074 vs Cap: 88757,96074,96194)`
+    - `[extra] Missing Key: llmRootBrandName (Expected: 로뎀나무행기)`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: 1)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: rank (Sim: 2 vs Cap: 8)`
+    - `[data] Value Mismatch: isNoDiscount (Sim:  vs Cap: True)`
+    - `[data] Value Mismatch: itemId (Sim: 19972434630 vs Cap: 17443892456)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: true)`
+    - `[data] Value Mismatch: viewType (Sim: BRICK_PRODUCT_UNIT_LIST_UPROTOCOL_M2 vs Cap: BRICK_PRODUCT_UNIT_GRID_UPROTOCOL_M2)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 86949316291 vs Cap: 84612513615)`
+    - `[data] Value Mismatch: searchRank (Sim: 1 vs Cap: 6)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: isDiscountRateVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (27,679))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Pet)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Cat Supply)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: 44b21da7-570d-4f50-8824-f34281c8540b vs Cap: 000097bd-6d21-3396-dbb7-09395705f383)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:05:55.565+0900 vs Cap: 2026-01-12T20:39:41.867+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBadDiscount (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 15,490원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: unitPrice (Sim:  vs Cap: (100ml당 52원))`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 2857)`
+    - `[data] Value Mismatch: productId (Sim: 7572200473 vs Cap: 6408770997)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: brandId (Sim:  vs Cap: 33408)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 436)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET,TOMORROW)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: originalPriceString (Sim:  vs Cap: 22,190원)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isOriginalPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 내일(화) 도착 )`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: rocketType (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Pet)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 4.5)`
+    - `[data] Value Mismatch: isUnitPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productDeliveryBenefitGroup (Sim:  vs Cap: 와우는 ,무료배송, • ,무료반품)`
+    - `[extra] Value Mismatch: exposedAttributesAvailable (Sim: 8L,3개,무향 vs Cap: 15L,2개,베이비 파우더향)`
+    - `[extra] Missing Key: dawnDeliveryEnabled (Expected: false)`
+    - `[extra] Value Mismatch: pddMessage (Sim: 모레(수) 도착 예정 vs Cap: 내일(화) 도착 )`
+    - `[extra] Value Mismatch: abGroups (Sim: B,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE vs Cap: B,NOT_APPLICABLE,B,NOT_APPLICABLE,C,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: catalogBrandName (Sim: 깔끄미 vs Cap: 탐사)`
+    - `[extra] Value Mismatch: titleExcludeAttributeNames (Sim: 8L,3개,무향 vs Cap: 15L,2개,베이비 파우더향)`
+    - `[extra] Value Mismatch: originalTitleStartsWithBrand (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:33000,salesPrice:16500,finalPrice:16500,20dMinPrice:16500,asisRate:50,tobeRate:0,discountType:noDiscount vs Cap: anchorPrice:22190,salesPrice:15490,finalPrice:15490,20dMinPrice:14490,asisRate:30,tobeRate:0,discountType:noDiscount)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 1 vs Cap: 8)`
+    - `[extra] Value Mismatch: hasLlmBrand (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: boldedBrandType (Sim: Catalog vs Cap: LLM)`
+    - `[extra] Missing Key: pddTime (Expected: 2026-01-13 23:59:59)`
+    - `[extra] Value Mismatch: brandInOriginalTitle (Sim: false vs Cap: true)`
+    - `[extra] Missing Key: samedayDeliveryEnabled (Expected: false)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (6,736) vs Cap: (27,679))`
+    - `[extra] Value Mismatch: similarProductWidgetShortcut (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: finalTitle (Sim: 고양이두부모래 1.5mm 극세사입자, 8L, 3개, 무향 vs Cap: 탐사 벤토나이트 응고형 고양이 모래, 15L, 2개, 베이비 파우더향)`
+    - `[extra] Value Mismatch: originalBrandName (Sim: 깔끄미 vs Cap: 탐사)`
+    - `[extra] Value Mismatch: abTestIds (Sim: 88757,96074,94952,86688 vs Cap: 88757,96074,89678,94952,96194,86688)`
+    - `[extra] Value Mismatch: originalTitle (Sim: 고양이두부모래 1.5mm 극세사입자 vs Cap: 탐사 벤토나이트 응고형 고양이 모래)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/image_audit/prod/05ef5f9f-61c3-4bae-9706-0762d2840681_fixing_v2.png.webp vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/retail/images/728849867387000-063e9f40-9ed7-45c9-82e5-df2e6931c450.jpg.webp)`
+    - `[extra] Missing Key: llmRootBrandName (Expected: 탐사)`
+    - `[extra] Value Mismatch: ratingAverage (Sim: 5.0 vs Cap: 4.5)`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 187x187)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 187x187)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 192x192)`
+    - `[extra] Missing Key: boldedBrandName (Expected: 탐사)`
+    - `[extra] Missing Key: titleContent (Expected: 탐사 벤토나이트 응고형 고양이 모래, 15L, 2개, 베이비 파우더향)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 36)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 30)`
+    - `[extra] Missing Key: commonViewType (Expected: GRID_2)`
+    - `[extra] Missing Key: uniqueKey (Expected: 91b7d4f6-f986-4408-92d0-f3f84d29466c:GRID_2)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: t3ouln2iuu3897vnop vs Cap: 6ah0nfeslg3y17ew8b)`
+    - `[data] Value Mismatch: rank (Sim: 2 vs Cap: 5)`
+    - `[data] Value Mismatch: itemId (Sim: 19972434630 vs Cap: 19972434626)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 86949316291 vs Cap: 86949316311)`
+    - `[data] Value Mismatch: price (Sim: 16500 vs Cap: 25020)`
+    - `[data] Value Mismatch: finalPrice (Sim: 16500 vs Cap: 25020)`
+    - `[data] Missing Key: manageCode (Expected: FMS_10000_A00596088_640374435266617)`
+    - `[data] Value Mismatch: hasInstantDiscount (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: originalPrice (Sim: 33000 vs Cap: 32870)`
+    - `[data] Value Mismatch: finalUnitPrice (Sim: (100ml당 69원) vs Cap: (100ml당 52원))`
+    - `[data] Value Mismatch: discountRate (Sim: 50 vs Cap: 23)`
+    - `[data] Value Mismatch: isNoDiscount (Sim: true vs Cap: false)`
+    - `[data] Missing Key: rocketDeliveryType (Expected: )`
+    - `[data] Value Mismatch: ratingAverage (Sim: 5.0 vs Cap: 5)`
+    - `[data] Value Mismatch: toggleViewType (Sim: search vs Cap: srp_grid)`
+    - `[data] Missing Key: searchRank (Expected: 5)`
+- **Schema 11599**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: itemId (Sim: 19972434630 vs Cap: 19972434626)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 86949316291 vs Cap: 86949316311)`
+    - `[data] Value Mismatch: sdpVisitKey (Sim: t3ouln2iuu3897vnop vs Cap: 6ah0nfeslg3y17ew8b)`
+    - `[data] Value Mismatch: originalPrice (Sim: 33000 vs Cap: 32870)`
+    - `[data] Value Mismatch: finalPrice (Sim: 16500 vs Cap: 25020)`
+    - `[data] Value Mismatch: ynInstantDiscount (Sim: no vs Cap: yes)`
+
+## Scenario 23: 차량용 방향제 (Product: 7977575043)
+- **Sim Dir**: `210558_차량용_방향제_7977575043`
+- **Capture**: `차량용_방향제-7977575043-21.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: 9c4df9c62143023 vs Cap: d07ee4915126445)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: isCoupick (Sim: False vs Cap: True)`
+    - `[data] Value Mismatch: rankOfCoupick (Sim: -1 vs Cap: 1)`
+    - `[data] Value Mismatch: keywordType (Sim: CAR_SUPPLY vs Cap: )`
+    - `[data] Value Mismatch: ixid (Sim: fac3bdf9-78b4-4990-b142-5efd91e22d6b vs Cap: 000097cd-4f32-66bf-995f-0e9b43682c71)`
+    - `[extra] Value Mismatch: pvId (Sim: 89794037 vs Cap: 159604651)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: searchRank (Sim: 16 vs Cap: 21)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 78808)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,C,B,NOT_APPLICABLE vs Cap: B,B,NOT_APPLICABLE,A)`
+    - `[extra] Value Mismatch: abTestIds (Sim: 88757,95462,89678,96074 vs Cap: 88757,89678,96074,96194)`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: 1)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: rank (Sim: 1 vs Cap: 27)`
+    - `[data] Value Mismatch: isNoDiscount (Sim:  vs Cap: True)`
+    - `[data] Value Mismatch: itemId (Sim: 26916415732 vs Cap: 6803303391)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: true)`
+    - `[data] Value Mismatch: viewType (Sim: BRICK_PRODUCT_UNIT_LIST_UPROTOCOL_M2 vs Cap: BRICK_PRODUCT_UNIT_GRID_UPROTOCOL_M2)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 93885757296 vs Cap: 74095991707)`
+    - `[data] Value Mismatch: searchRank (Sim: 0 vs Cap: 21)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: isDiscountRateVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (27,461))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Car Accessories)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Car Tools & DIY)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: fac3bdf9-78b4-4990-b142-5efd91e22d6b vs Cap: 000097cd-4f32-66bf-995f-0e9b43682c71)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:06:01.106+0900 vs Cap: 2026-01-12T20:41:01.172+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBadDiscount (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 12,500원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deliveryBadge (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: unitPrice (Sim:  vs Cap: (10ml당 833원))`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 6878)`
+    - `[data] Value Mismatch: productId (Sim: 9143511919 vs Cap: 7977575043)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: brandId (Sim:  vs Cap: 75148)`
+    - `[data] Value Mismatch: rocketMarketType (Sim:  vs Cap: rm_parent_core)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 409)`
+    - `[data] Value Mismatch: rocketDeliveryType (Sim:  vs Cap: ROCKET,TOMORROW)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: originalPriceString (Sim:  vs Cap: 18,900원)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isOriginalPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 내일(화) 도착 )`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: rocketType (Sim:  vs Cap: ROCKET)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Household)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 4.5)`
+    - `[data] Value Mismatch: isUnitPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productDeliveryBenefitGroup (Sim:  vs Cap: 와우는 ,무료배송, • ,무료반품)`
+    - `[extra] Value Mismatch: exposedAttributesAvailable (Sim: 허브버가못50미리2개,1세트 vs Cap: 블랙 체리,1세트)`
+    - `[extra] Missing Key: dawnDeliveryEnabled (Expected: false)`
+    - `[extra] Value Mismatch: pddMessage (Sim: 모레(수) 도착 예정 vs Cap: 내일(화) 도착 )`
+    - `[extra] Value Mismatch: abGroups (Sim: B,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,C vs Cap: B,NOT_APPLICABLE,B,NOT_APPLICABLE,A,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: catalogBrandName (Sim: 엘리시온 vs Cap: GIOVANNY)`
+    - `[extra] Value Mismatch: titleExcludeAttributeNames (Sim: 허브버가못50미리2개,1세트 vs Cap: 블랙 체리,1세트)`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:32000,salesPrice:29600,finalPrice:29600,20dMinPrice:null,asisRate:7,tobeRate:0,discountType:noDiscount vs Cap: anchorPrice:18900,salesPrice:12500,finalPrice:12500,20dMinPrice:10900,asisRate:33,tobeRate:0,discountType:noDiscount)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 1 vs Cap: 10)`
+    - `[extra] Value Mismatch: hasLlmBrand (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: boldedBrandType (Sim: Catalog vs Cap: LLM)`
+    - `[extra] Missing Key: pddTime (Expected: 2026-01-13 23:59:59)`
+    - `[extra] Missing Key: samedayDeliveryEnabled (Expected: false)`
+    - `[extra] Value Mismatch: highlightedKeywordsAvailable (Sim: 방향제,차량 vs Cap: 차량,방향제)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (1) vs Cap: (27,461))`
+    - `[extra] Value Mismatch: similarProductWidgetShortcut (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: finalTitle (Sim: 엘리시온 방향제 차량용 대용량 디퓨져 50ml 2개, 허브버가못50미리2개, 1세트 vs Cap: GIOVANNY 차량용 디퓨저 자동차 방향제 150ml, 블랙 체리, 1세트)`
+    - `[extra] Missing Key: originalBrandName (Expected: GIOVANNY)`
+    - `[extra] Value Mismatch: seeMoreOptionAvailable (Sim: false vs Cap: true)`
+    - `[extra] Value Mismatch: abTestIds (Sim: 88757,96074,94952,86688,95462 vs Cap: 88757,96074,89678,94952,96194,86688)`
+    - `[extra] Value Mismatch: originalTitle (Sim: 엘리시온 방향제 차량용 대용량 디퓨져 50ml 2개 vs Cap: GIOVANNY 차량용 디퓨저 자동차 방향제 150ml)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/217c/f236cab651d8a1f38271a1747927d09ac566bd00d86fee10f435938a5b26.png.webp vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/retail/images/1028466920623741-c06e223e-f773-4227-b6a1-2d87db510f09.jpg.webp)`
+    - `[extra] Missing Key: llmRootBrandName (Expected: giovanny)`
+    - `[extra] Value Mismatch: ratingAverage (Sim: 5.0 vs Cap: 4.5)`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 187x187)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 187x177)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 192x192)`
+    - `[extra] Missing Key: boldedBrandName (Expected: GIOVANNY)`
+    - `[extra] Missing Key: titleContent (Expected: GIOVANNY 차량용 디퓨저 자동차 방향제 150ml, 블랙 체리, 1세트)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 40)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 34)`
+    - `[extra] Missing Key: commonViewType (Expected: GRID_2)`
+    - `[extra] Missing Key: uniqueKey (Expected: 8d588ed6-6572-44f9-b864-f3f2a369dc0c:GRID_2)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: ic3msz5stfuci00j9x vs Cap: jmpcm4kbg6n97wi4gt)`
+    - `[data] Missing Key: rocketDeliveryType (Expected: ROCKET,TOMORROW)`
+    - `[data] Value Mismatch: toggleViewType (Sim: search vs Cap: srp_grid)`
+    - `[data] Missing Key: searchRank (Expected: 21)`
+- **Schema 11599**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: ic3msz5stfuci00j9x vs Cap: jmpcm4kbg6n97wi4gt)`
+
+## Scenario 24: 달빛호박식혜 (Product: 9024146312)
+- **Sim Dir**: `210232_달빛호박식혜_9024146312`
+- **Capture**: `달빛호박식혜-9024146312-0.json`
+
+### Step: 133_P
+- **Schema 15704**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: rootSearchId (Sim: 934fc542432556 vs Cap: 752d603e264124)`
+- **Schema 116**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: searchCount (Sim: 551 vs Cap: 546)`
+    - `[data] Value Mismatch: ixid (Sim: 6e061347-231f-43f7-a50c-abfec4a1fe82 vs Cap: 000097dd-2291-a2cf-0297-30c46cb4d3ec)`
+    - `[extra] Value Mismatch: pvId (Sim: 70960218 vs Cap: 252844662)`
+
+### Step: 147_P
+- **Schema 124**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: searchCount (Sim: 551 vs Cap: 546)`
+    - `[data] Value Mismatch: searchViewType (Sim: LIST vs Cap: GRID_2)`
+    - `[data] Value Mismatch: filterKey (Sim:  vs Cap: None)`
+    - `[data] Value Mismatch: internalCategoryId (Sim:  vs Cap: 58799)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,A vs Cap: B,B)`
+    - `[extra] Missing Key: currentView (Expected: /search_list)`
+    - `[extra] Missing Key: eventReferrer (Expected: click_search_list)`
+
+### Step: 156_P
+- **Schema 14741**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: imageCount (Sim:  vs Cap: 1)`
+    - `[data] Value Mismatch: isFreeReturn (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: adIcon (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: rank (Sim: 0 vs Cap: 2)`
+    - `[data] Value Mismatch: itemId (Sim: 26462223016 vs Cap: 8438609270)`
+    - `[data] Value Mismatch: isTitleTruncated (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: viewType (Sim: BRICK_PRODUCT_UNIT_LIST_UPROTOCOL_M2 vs Cap: BRICK_PRODUCT_UNIT_GRID_UPROTOCOL_M2)`
+    - `[data] Value Mismatch: vendorItemId (Sim: 93437504341 vs Cap: 75726214866)`
+    - `[data] Value Mismatch: searchRank (Sim: 0 vs Cap: 1)`
+    - `[data] Value Mismatch: hasUspGeneratedByCoupangAi (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: deviceFontScale (Sim:  vs Cap: 1.0)`
+    - `[data] Value Mismatch: unitPriceInfo (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isBadReferencePrice (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingCountString (Sim:  vs Cap: (176))`
+    - `[data] Value Mismatch: isSalesPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: titleMaxNumberOfLines (Sim: 0 vs Cap: 3)`
+    - `[data] Value Mismatch: unitname1 (Sim:  vs Cap: Beverages)`
+    - `[data] Value Mismatch: numberColorChipsVisible (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: unitname2 (Sim:  vs Cap: Drinks)`
+    - `[data] Value Mismatch: anchorPrice (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: isTitleVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: ixid (Sim: 6e061347-231f-43f7-a50c-abfec4a1fe82 vs Cap: 000097dd-2291-a2cf-0297-30c46cb4d3ec)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: finalPriceV2 (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: colorHexList (Sim: False vs Cap: )`
+    - `[data] Value Mismatch: discountType (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: starRating (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: exposureTimestamp (Sim: 2026-01-12T21:02:34.587+0900 vs Cap: 2026-01-12T20:42:04.834+0900)`
+    - `[data] Value Mismatch: isPreviousPurchaseBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: discountRate (Sim:  vs Cap: NO VALUE)`
+    - `[data] Value Mismatch: finalPriceString (Sim:  vs Cap: 23,700원)`
+    - `[data] Value Mismatch: titleLineCount (Sim: 0 vs Cap: 3)`
+    - `[data] Value Mismatch: isRecentViewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: unitPrice (Sim:  vs Cap: (100ml당 677원))`
+    - `[data] Value Mismatch: kan3CategoryId (Sim:  vs Cap: 1449)`
+    - `[data] Value Mismatch: productId (Sim: 9024146312 vs Cap: 7628759993)`
+    - `[data] Value Mismatch: remoteAreaShippingFeeBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productUnitHeight (Sim:  vs Cap: 453)`
+    - `[data] Value Mismatch: dpi (Sim:  vs Cap: 450)`
+    - `[data] Value Mismatch: lowStockMessageNumber (Sim:  vs Cap: null)`
+    - `[data] Value Mismatch: isPddVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isBestReviewBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: isBestAwardsBadge (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: promiseDeliveryDate (Sim:  vs Cap: 모레(수) 도착)`
+    - `[data] Value Mismatch: isRecentViewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: bestAwardsBadgeType (Sim:  vs Cap: N)`
+    - `[data] Value Mismatch: isLowStockMessage (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: queryCategory (Sim:  vs Cap: Beverages)`
+    - `[data] Value Mismatch: isBestReviewBadgeEligible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: ratingAverageString (Sim:  vs Cap: 4.5)`
+    - `[data] Value Mismatch: isUnitPriceVisible (Sim:  vs Cap: true)`
+    - `[data] Value Mismatch: isAiCompPossible (Sim:  vs Cap: False)`
+    - `[data] Value Mismatch: productDeliveryBenefitGroup (Sim:  vs Cap: 무료배송)`
+    - `[extra] Value Mismatch: exposedAttributesAvailable (Sim: 6개,500ml vs Cap: 04얼음동동 호박식혜 500ml 7개,7개,500ml)`
+    - `[extra] Value Mismatch: pddMessage (Sim: 모레(수) 도착 예정 vs Cap: 모레(수) 도착)`
+    - `[extra] Value Mismatch: abGroups (Sim: B,A,NOT_APPLICABLE,NOT_APPLICABLE vs Cap: B,B,B,NOT_APPLICABLE,NOT_APPLICABLE)`
+    - `[extra] Value Mismatch: catalogBrandName (Sim: 달빛기정떡 vs Cap: 한양전통식품)`
+    - `[extra] Value Mismatch: titleExcludeAttributeNames (Sim: 6개,500ml vs Cap: 04얼음동동 호박식혜 500ml 7개,7개,500ml)`
+    - `[extra] Value Mismatch: priceInfo (Sim: anchorPrice:24000,salesPrice:20900,finalPrice:20900,20dMinPrice:null,asisRate:12,tobeRate:0,discountType:noDiscount vs Cap: anchorPrice:null,salesPrice:23700,finalPrice:23700,20dMinPrice:23700,asisRate:0,tobeRate:0,discountType:noDiscount)`
+    - `[extra] Value Mismatch: sdpThumbnailImageCount (Sim: 9 vs Cap: 1)`
+    - `[extra] Value Mismatch: hasLlmBrand (Sim: true vs Cap: false)`
+    - `[extra] Value Mismatch: boldedBrandType (Sim: LLM vs Cap: Catalog)`
+    - `[extra] Value Mismatch: ratingCount (Sim: (1) vs Cap: (176))`
+    - `[extra] Value Mismatch: similarProductWidgetShortcut (Sim: true vs Cap: false)`
+    - `[extra] Value Mismatch: finalTitle (Sim: [달빛식혜] 맛있는 국내산 쌀 얼음호박식혜/ 전통 수제 식혜, 6개, 500ml vs Cap: 믿고 마시는 수제 얼음동동 식혜 호박식혜, 04얼음동동 호박식혜 500ml 7개, 7개, 500ml)`
+    - `[extra] Value Mismatch: seeMoreOptionAvailable (Sim: true vs Cap: false)`
+    - `[extra] Value Mismatch: abTestIds (Sim: 88757,96074,94952,86688 vs Cap: 88757,94799,96074,94952,86688)`
+    - `[extra] Value Mismatch: originalTitle (Sim: [달빛식혜] 맛있는 국내산 쌀 얼음호박식혜/ 전통 수제 식혜 vs Cap: 믿고 마시는 수제 얼음동동 식혜 호박식혜)`
+    - `[extra] Value Mismatch: imageURLs (Sim: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/3b3a/29bcfec71c7f96c93b580e2df31da837e3779be4f7c74f953bd1d0535197.jpg.webp vs Cap: https://thumbnail.coupangcdn.com/thumbnails/remote/657x657q90trim/image/vendor_inventory/796d/986cc9ed8defd895ca4961a0884374af447f100cf15d2a16e0b9df9de8fe.jpg.webp)`
+    - `[extra] Value Mismatch: ratingAverage (Sim: 4.0 vs Cap: 4.5)`
+    - `[extra] Missing Key: srpThumbnailImageSize (Expected: 187x187)`
+    - `[extra] Missing Key: srpThumbnailImageContentSize (Expected: 187x152)`
+    - `[extra] Missing Key: srpThumbnailImageContainerSize (Expected: 192x192)`
+    - `[extra] Missing Key: titleContent (Expected: 믿고 마시는 수제 얼음동동 식혜 호박식혜, 04얼음동동 호박식혜 500ml 7개, 7개, 500ml)`
+    - `[extra] Missing Key: applySystemFontSize (Expected: APPLY)`
+    - `[extra] Missing Key: lengthOfActualTitle (Expected: 55)`
+    - `[extra] Missing Key: lengthOfVisibleTitle (Expected: 55)`
+    - `[extra] Missing Key: commonViewType (Expected: GRID_2)`
+    - `[extra] Missing Key: uniqueKey (Expected: 81e5e047-1bcd-43d2-b567-9174d3716463:GRID_2)`
+    - `[extra] Missing Key: parentViewType (Expected: LIST)`
+
+### Step: 179_P
+- **Schema 10**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: w3vymydfnh4zjw9oz5 vs Cap: v45ysqfqfxgpm1354j)`
+    - `[data] Value Mismatch: ratingAverage (Sim: 4.0 vs Cap: 4)`
+    - `[data] Value Mismatch: toggleViewType (Sim: search vs Cap: srp_grid)`
+    - `[data] Missing Key: searchRank (Expected: 0)`
+- **Schema 11599**: ⚠️ MISMATCH
+    - `[data] Value Mismatch: sdpVisitKey (Sim: w3vymydfnh4zjw9oz5 vs Cap: v45ysqfqfxgpm1354j)`
