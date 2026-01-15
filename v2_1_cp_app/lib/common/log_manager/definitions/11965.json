@@ -1,0 +1,20 @@
+{
+    "schemaId": 11965,
+    "schemaVersion": 15,
+    "static": {
+        "data": {
+            "domain": "-",
+            "logCategory": "system",
+            "logType": "error",
+            "pageName": "SearchFragment",
+            "eventName": "product",
+            "domainName": "search",
+            "errorDescription": "PRODUCT_VITAMIN Type is not exist",
+            "errorName": "requiredViewTypeNotExist",
+            "eventType": "render",
+            "source": "server",
+            "errorType": "apiError"
+        }
+    },
+    "mapping": {}
+}

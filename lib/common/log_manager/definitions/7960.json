@@ -1,0 +1,48 @@
+{
+    "schemaId": 7960,
+    "schemaVersion": 1,
+    "static": {
+        "data": {
+            "domain": "android",
+            "logCategory": "system",
+            "logType": "debug",
+            "pageName": "mvvm refactor",
+            "eventName": "mvvm refactor",
+            "featureName": "fbi_pup_migration"
+        },
+        "extra": {
+            "KEY_RATING_HIGHLIGHT": "true",
+            "sdp.requestParams": "{}",
+            "sdp.sub.discount": "0.0",
+            "sdp.sub.price": "0",
+            "sdp.egiftPromotion": "false",
+            "sdp.previousActivity": "SearchRedesignActivity",
+            "sdp.toggleViewType": "srp_grid",
+            "sdp.mvp": "11",
+            "KEY_SOURCE_TYPE": "search"
+        }
+    },
+    "mapping": {
+        "extra": {
+            "KEY_PICK_TYPE": "RESULT.SEARCH.srp_isCoupick",
+            "sdp.previousViewType": "RESULT.SEARCH.searchViewType",
+            "KEY_PRODUCT_ID": "INPUT.productId",
+            "KEY_SEARCH_ID": "INPUT.searchId",
+            "KEY_SALE_PRICE": "RESULT.SEARCH.srp_finalPriceString",
+            "KEY_RATING_COUNT": "RESULT.SEARCH.srp_ratingCountString",
+            "KEY_SIMILAR_SEARCH_KEYWORD_TYPE": "RESULT.ROOT.keywordType",
+            "sdp.productImageScaleType": "RESULT.SEARCH.srp_scaleType",
+            "KEY_ITEM_PRODUCT_ID": "INPUT.itemProductId",
+            "KEY_RATING_AVERAGE": "RESULT.SEARCH.srp_ratingAverage",
+            "sdp.o.price": "RESULT.SEARCH.srp_originalPrice",
+            "KEY_PRODUCT_NAME": "RESULT.SEARCH.srp_productName",
+            "KEY_FILTER_KEY": "RESULT.SEARCH.filterKey",
+            "KEY_SEARCH_COUNT": "RESULT.ROOT.searchCount",
+            "sdp.discount": "RESULT.SEARCH.srp_discountRate",
+            "KEY_ITEM_ID": "INPUT.itemId",
+            "KEY_VENDOR_ITEM_ID": "INPUT.vendorItemId",
+            "KEY_RANK": "INPUT.rank",
+            "KEY_SEARCH_KEYWORD": "INPUT.q"
+        }
+    }
+}

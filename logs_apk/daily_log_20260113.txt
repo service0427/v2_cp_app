@@ -1,0 +1,6 @@
+[2026-01-13 13:28:36] [APK] [Keyword: 게이밍 의자] [Product: 9221117836] [Step: step_147_click_search_product] [Status: 200]
+[2026-01-13 13:28:41] [APK] [Keyword: 게이밍 의자] [Product: 9221117836] [Step: step_147_click_search_product] [Status: 200]
+[2026-01-13 13:41:53] [APK] [Keyword: 달빛호박식혜] [Product: 9024146312] [Step: step_128_search_products] [Status: 200]
+[2026-01-13 13:41:54] [APK] [Keyword: 달빛호박식혜] [Product: 9024146312] [Step: step_147_click_search_product] [Status: 200]
+[2026-01-13 13:42:04] [APK] [Keyword: 노트북] [Product: 8099175514] [Step: step_128_search_products] [Status: 200]
+[2026-01-13 13:42:05] [APK] [Keyword: 노트북] [Product: 8099175514] [Step: step_147_click_search_product] [Status: 200]

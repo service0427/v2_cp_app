@@ -1,0 +1,28 @@
+{
+    "schemaId": 9453,
+    "schemaVersion": 2,
+    "static": {
+        "data": {
+            "domain": "AMP",
+            "logCategory": "system",
+            "logType": "performance",
+            "pageName": "domain.search.presentation.view.search.SearchRedesignActivity(SearchFragment)",
+            "eventName": "frame_rendering_metric",
+            "applicationId": "com.coupang.mobile",
+            "buildType": "prod",
+            "osType": "ANDROID",
+            "screenName": "SearchFragment",
+            "networkType": "wifi"
+        }
+    },
+    "mapping": {
+        "data": {
+            "deviceName": "DEVICE.model",
+            "sourceUserAgent": "DEVICE.coupangAppHeader",
+            "totalFrameCount": {
+                "source": "PERFORMANCE.totalFrameCount",
+                "default": 262
+            }
+        }
+    }
+}

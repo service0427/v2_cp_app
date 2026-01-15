@@ -1,0 +1,54 @@
+{
+    "schemaId": 124,
+    "schemaVersion": 53,
+    "static": {
+        "data": {
+            "isNewBadge": false,
+            "isCartItem": false,
+            "pageName": "srp",
+            "searchViewType": "GRID_2",
+            "eventName": "click_search_product",
+            "logType": "click",
+            "logCategory": "event",
+            "isBypass": true
+        },
+        "extra": {
+            "currentView": "/search_list",
+            "eventReferrer": "click_search_list"
+        }
+    },
+    "mapping": {
+        "data": {
+            "q": "INPUT.q",
+            "productId": "RESULT.ROOT.productId",
+            "searchId": "RESULT.ROOT.searchId",
+            "itemId": "RESULT.ROOT.itemId",
+            "vendorItemId": "RESULT.ROOT.vendorItemId",
+            "internalCategoryId": "RESULT.SEARCH.internalCategoryId",
+            "searchRank": "RESULT.SEARCH.srp_rank",
+            "rank": "RESULT.SEARCH.srp_rank",
+            "itemProductId": {
+                "source": "RESULT.ROOT.itemProductId",
+                "default": "4"
+            },
+            "id": "RESULT.ROOT.productId",
+            "searchCount": "RESULT.SEARCH.searchCount",
+            "reviewRating": "RESULT.SEARCH.srp_ratingAverage",
+            "unitname1": "RESULT.SEARCH.unitname1",
+            "unitname2": "RESULT.SEARCH.unitname2",
+            "queryCategory": "RESULT.SEARCH.unitname1",
+            "salePrice": {
+                "source": "RESULT.SEARCH.srp_finalPrice",
+                "default": 0
+            }
+        },
+        "extra": {
+            "ratingCount": "RESULT.SEARCH.srp_ratingCountString",
+            "eventReferrer": {
+                "source": "srp_click_log_bypass.extra.eventReferrer",
+                "default": "click_search_list"
+            },
+            "rocketDeliveryType": "RESULT.SEARCH.rocketDeliveryType"
+        }
+    }
+}

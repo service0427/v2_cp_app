@@ -1,6 +1,7 @@
 import time
 import uuid
 import datetime
+import random
 
 def get_current_time_iso():
     """Returns current time in ISO format with timezone (Korean Standard Time)"""
@@ -39,7 +40,8 @@ def generate_common_payload(context, event_time=None):
         'market': 'KR',
         'resolution': resolution,
         'eventTime': event_time,
-        'memberSrl': '',
+        # 'memberSrl': str(random.randint(2000000, 300000000)),
+        'memberSrl': context.get('INPUT', {}).get('memberSrl', ''),
         'app': {
             'osVersion': device.get('os_version'),
             'model': device.get('model'),

@@ -1,0 +1,19 @@
+{
+    "schemaId": 17211,
+    "schemaVersion": 2,
+    "static": {
+        "data": {
+            "domain": "srp",
+            "logCategory": "system",
+            "logType": "debug",
+            "analyzeDuration": 5
+        }
+    },
+    "mapping": {
+        "data": {
+            "widgetTotalCount": "RESULT.SEARCH.widgetTotalCount",
+            "widgetTypeCount": "RESULT.SEARCH.widgetTypeCount",
+            "widgetDistribution": "RESULT.SEARCH.widgetDistribution"
+        }
+    }
+}

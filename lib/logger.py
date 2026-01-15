@@ -116,11 +116,22 @@ def log_transaction(method, url, req_headers, req_body, resp_status, resp_header
                     # Actually, for jq, string is fine.
                     log_data["response"]["body"] = resp_body
 
-            step_filename = f"{step_name}.log" if step_name else f"unknown_step_{timestamp}.log"
-            artifact_path = os.path.join(LOG_BASE_DIR, step_filename)
-            
-            with open(artifact_path, "w", encoding="utf-8") as f:
-                json.dump(log_data, f, indent=2, ensure_ascii=False)
+            # [Unified Log Only] Append to consolidated session log
+            # User requested to disable individual logs and keep only the unified one.
+            unified_path = os.path.join(LOG_BASE_DIR, "Action_Log.log")
+            try:
+                with open(unified_path, "a", encoding="utf-8") as f:
+                    f.write(f"=== [{step_name}] {timestamp} ===\n")
+                    json.dump(log_data, f, indent=2, ensure_ascii=False)
+                    f.write("\n\n")
+            except Exception as e:
+                print(f"[Logger] Failed to write unified log: {e}")
+
+            # Individual logging block removed as per request
+            # step_filename = f"{step_name}.log" if step_name else f"unknown_step_{timestamp}.log"
+            # artifact_path = os.path.join(LOG_BASE_DIR, step_filename)
+            # with open(artifact_path, "w", encoding="utf-8") as f:
+            #    json.dump(log_data, f, indent=2, ensure_ascii=False)
 
         return LOG_FILE_PATH
 
@@ -152,3 +163,45 @@ def log_bypass_schema(module_prefix, schema):
     except Exception as e:
         print(f"[Logger] Warning: Failed to log bypass schema: {e}")
     return None
+
+def log_error(step_name, message, context=None):
+    """
+    Logs critical errors to a separate error log file for post-mortem analysis.
+    Format: [Timestamp] [Step] [CRITICAL] Message | Context Dump
+    """
+    try:
+        if not os.path.exists("logs"):
+            os.makedirs("logs")
+            
+        today = datetime.datetime.now().strftime('%Y%m%d')
+        error_log_path = f"logs/error_log_{today}.txt"
+        timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        
+        context_str = ""
+        if context:
+            try:
+                # Truncate large context for readability
+                short_context = {k: str(v)[:200] for k, v in context.items() if k in ['INPUT', 'DEVICE']}
+                # Also include keys of RESULT to see what's missing
+                if 'RESULT' in context:
+                    short_context['RESULT_KEYS'] = list(context['RESULT'].keys())
+                    if 'ROOT' in context['RESULT']:
+                        short_context['RESULT_ROOT'] = context['RESULT']['ROOT']
+                context_str = f" | Context: {json.dumps(short_context, ensure_ascii=False)}"
+            except:
+                context_str = " | Context: (Failed to serialize)"
+
+        log_line = f"[{timestamp}] [{step_name}] [CRITICAL] {message}{context_str}"
+        
+        # 1. Print to Console
+        print(f"\033[91m{log_line}\033[0m") # Red Color
+        
+        # 2. Write to File
+        with open(error_log_path, "a", encoding="utf-8") as f:
+            f.write(log_line + "\n")
+            
+        return error_log_path
+    
+    except Exception as e:
+        print(f"[Logger] Failed to log error: {e}")
+        return None

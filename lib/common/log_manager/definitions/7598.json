@@ -1,0 +1,15 @@
+{
+    "schemaId": 7598,
+    "schemaVersion": 1,
+    "static": {
+        "data": {
+            "domain": "common",
+            "logCategory": "system",
+            "logType": "platform",
+            "pageName": "",
+            "eventName": "common_checking_unused",
+            "key": "MPA_3281",
+            "value": "getSelectedParamsString - has filter data"
+        }
+    }
+}

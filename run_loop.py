@@ -7,7 +7,7 @@ def main():
     # 1. Parse Loop/Delay arguments, keep the rest for run.py
     parser = argparse.ArgumentParser(description="Batch Loop Wrapper for run.py")
     parser.add_argument("--loop", type=int, default=1, help="Number of iterations (-1 for infinite)")
-    parser.add_argument("--delay", type=float, default=5.0, help="Delay in seconds between iterations")
+    parser.add_argument("--delay", type=float, default=1.0, help="Delay in seconds between iterations")
     
     # parse_known_args allows us to capture the rest easily
     args, unknown_args = parser.parse_known_args()

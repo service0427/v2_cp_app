@@ -1,0 +1,44 @@
+{
+    "schemaId": 116,
+    "schemaVersion": 23,
+    "static": {
+        "data": {
+            "domain": "srp",
+            "logCategory": "view",
+            "logType": "page",
+            "pageName": "srp",
+            "channel": "user",
+            "isGenderTabTest": false,
+            "isLoyaltyMember": false,
+            "deviceFontScale": "1.0",
+            "hasProdWColorChips": false,
+            "hasProdWColorTexts": false,
+            "turnoffAutosave": false,
+            "hasProdOTLink": false,
+            "appliedFontScale": "1.0",
+            "systemFontScale": "1.0"
+        },
+        "extra": {
+            "parentView": "/home"
+        }
+    },
+    "mapping": {
+        "data": {
+            "q": "INPUT.q",
+            "searchViewType": "RESULT.SEARCH.searchViewType",
+            "searchId": "RESULT.ROOT.searchId",
+            "searchCount": "RESULT.ROOT.searchCount",
+            "isCoupick": "RESULT.SEARCH.isCoupick",
+            "rankOfCoupick": "RESULT.SEARCH.rankOfCoupick",
+            "keywordType": "RESULT.ROOT.keywordType",
+            "ixid": "DEVICE.ixid",
+            "dpi": "DEVICE.dpi",
+            "filterKeys": "RESULT.SEARCH.filterKeys",
+            "filterType": "RESULT.SEARCH.filterType"
+        },
+        "extra": {
+            "pvId": "RESULT.SEARCH.srp_pvId",
+            "dpi": "DEVICE.dpi_level"
+        }
+    }
+}

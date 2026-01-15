@@ -1,0 +1,35 @@
+{
+    "schemaId": 14044,
+    "schemaVersion": 1,
+    "static": {
+        "common": {},
+        "meta": {
+            "schemaId": 14044,
+            "schemaVersion": 1
+        },
+        "data": {
+            "logType": "click",
+            "domain": "sdp",
+            "pageName": "sdp",
+            "logCategory": "event",
+            "widgetName": "SECTION_ATF_BOTTOM_BUTTONS",
+            "componentName": "BOTTOM_BUTTON",
+            "checked": false,
+            "eventName": ""
+        },
+        "extra": {
+            "eventReferrer": "handler_click",
+            "id": "장바구니 담기",
+            "index": 0,
+            "widgetId": ""
+        }
+    },
+    "mapping": {
+        "data": {
+            "pvid": "INPUT.srp_pvId",
+            "traceId": "INPUT.sdp_traceId",
+            "serverTime": "INPUT.sdp_serverTime"
+        },
+        "extra": {}
+    }
+}

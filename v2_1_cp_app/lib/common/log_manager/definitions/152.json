@@ -1,0 +1,23 @@
+{
+    "schemaId": 152,
+    "schemaVersion": 4,
+    "static": {
+        "data": {
+            "domain": "srp",
+            "logCategory": "impression",
+            "logType": "impression",
+            "pageName": "srp",
+            "eventName": "impression_ranking",
+            "domainType": "SRP",
+            "channel": "user"
+        }
+    },
+    "mapping": {
+        "data": {
+            "searchId": "INPUT.searchIdCombined",
+            "q": "INPUT.q",
+            "totalCount": "RESULT.ROOT.searchCount",
+            "rank": "INPUT.rank"
+        }
+    }
+}

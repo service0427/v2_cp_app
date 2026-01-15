@@ -28,6 +28,7 @@ def run_schedule():
     parser.add_argument("--capture_file", type=str, help="Path to capture file for dynamic scenario execution.")
     parser.add_argument("--id", type=str, help="Scenario ID from scenarios.json (e.g. 'test1')")
     parser.add_argument("--proxy", action="store_true", help="Enable dynamic SOCKS5 proxy.")
+    parser.add_argument("--random_member_srl", action="store_true", help="Randomize memberSrl per session.")
 
     # Target Product Parameters
     parser.add_argument("--q", type=str, default="호박식혜 달빛", help="Search keyword")
@@ -92,7 +93,12 @@ def run_schedule():
     # enable_artifacts = args.log (Daily Text Log is always ON)
     lib.logger.init(args.log, {'q': args.q, 'productId': args.productId})
 
-
+    # [NEW] Randomized memberSrl Logic
+    member_srl = ''
+    if args.random_member_srl:
+        import random
+        member_srl = str(random.randint(2000000, 300000000))
+        print(f"[Run] Session-Scoped Randomized memberSrl: {member_srl}")
 
     # Modular Schedule Execution
     schedule_dir = os.path.join(os.path.dirname(__file__), "lib", "schedule")
@@ -116,6 +122,7 @@ def run_schedule():
             'productId': args.productId,
             'vendorItemId': args.vendorItemId,
             'itemId': args.itemId,
+            'memberSrl': member_srl, # [NEW] Injected here
         },
 
         # 디바이스 프로필 (generate_common_payload & headers에서 사용)

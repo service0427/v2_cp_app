@@ -1,0 +1,21 @@
+{
+    "schemaId": 15704,
+    "schemaVersion": 1,
+    "static": {
+        "data": {
+            "domain": "srp",
+            "logCategory": "view",
+            "logType": "page",
+            "pageName": "srp",
+            "eventName": "srp_view_impression",
+            "previousRootSearchId": ""
+        }
+    },
+    "mapping": {
+        "data": {
+            "q": "INPUT.q",
+            "searchId": "RESULT.ROOT.searchId",
+            "rootSearchId": "RESULT.ROOT.searchId"
+        }
+    }
+}

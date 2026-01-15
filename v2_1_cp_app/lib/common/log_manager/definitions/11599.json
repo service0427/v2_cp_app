@@ -1,0 +1,35 @@
+{
+    "schemaId": 11599,
+    "schemaVersion": 4,
+    "static": {
+        "common": {},
+        "meta": {
+            "schemaId": 11599,
+            "schemaVersion": 4
+        },
+        "data": {
+            "logType": "click",
+            "domain": "sdp",
+            "pageName": "sdp",
+            "eventName": "add_to_cart",
+            "logCategory": "event",
+            "sdpHandlerClickType": "add_to_cart"
+        },
+        "extra": {
+            "eventReferrer": "add_to_cart",
+            "currentView": "/search_list"
+        }
+    },
+    "mapping": {
+        "data": {
+            "sdpVisitKey": "INPUT.sdpVisitKey",
+            "q": "INPUT.q",
+            "searchId": "INPUT.searchId",
+            "productId": "INPUT.productId",
+            "itemId": "INPUT.itemId",
+            "vendorItemId": "INPUT.vendorItemId",
+            "quantity": "INPUT.quantity"
+        },
+        "extra": {}
+    }
+}

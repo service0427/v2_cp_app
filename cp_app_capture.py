@@ -195,9 +195,9 @@ captured = []
 def request(flow: http.HTTPFlow):
     host = flow.request.host
 
-    # 관심 도메인 필터링
-    if not any(d in host for d in CAPTURE_DOMAINS):
-        return
+    # [Mod] No Domain Filtering - Capture Everything
+    # if not any(d in host for d in CAPTURE_DOMAINS):
+    #    return
 
     req_data = {{
         "ts": flow.request.timestamp_start,
@@ -222,7 +222,8 @@ def request(flow: http.HTTPFlow):
             try:
                 req_data["body"] = json.loads(body)
             except:
-                req_data["body_raw"] = body.decode("utf-8", errors="ignore")[:5000]
+                # [Mod] Increased limit to 500KB
+                req_data["body_raw"] = body.decode("utf-8", errors="ignore")[:500000]
         except Exception as e:
             req_data["body_error"] = str(e)
 
@@ -230,14 +231,16 @@ def request(flow: http.HTTPFlow):
     with open("/tmp/mitm_capture.jsonl", "a") as f:
         f.write(json.dumps(req_data, ensure_ascii=False) + "\\n")
 
-    # 콘솔 출력
-    print(f"[{{flow.request.method}}] {{host}}{{flow.request.path[:60]}}")
+    # 콘솔 출력 (Highlight couplang logs)
+    prefix = "*" if "coupang" in host else " "
+    print(f"[{{flow.request.method}}] {{prefix}}{{host}}{{flow.request.path[:100]}}")
 
 def response(flow: http.HTTPFlow):
     host = flow.request.host
 
-    if not any(d in host for d in CAPTURE_DOMAINS):
-        return
+    # [Mod] No Domain Filtering
+    # if not any(d in host for d in CAPTURE_DOMAINS):
+    #    return
 
     # Response body도 저장 (LJC 응답 확인용)
     if flow.response and flow.response.content:
@@ -252,7 +255,8 @@ def response(flow: http.HTTPFlow):
         try:
             resp_data["body"] = json.loads(flow.response.content)
         except:
-            if len(flow.response.content) < 5000:
+            # [Mod] Increased limit to 500KB
+            if len(flow.response.content) < 500000:
                 resp_data["body_raw"] = flow.response.content.decode("utf-8", errors="ignore")
 
         with open("/tmp/mitm_capture.jsonl", "a") as f:
@@ -385,7 +389,7 @@ def start_frida():
 
     print(f"[Frida] SSL bypass 적용 중...")
 
-    # Frida 실행 (백그라운드)
+    # Frida 실행 (Spawn)
     frida_path = "/home/tech/.local/bin/frida"
     frida_process = subprocess.Popen(
         [frida_path, "-D", DEVICE_ID, "-f", COUPANG_APP_PACKAGE, "-l", str(SSL_BYPASS_SCRIPT)],

@@ -1,0 +1,25 @@
+{
+    "schemaId": 11942,
+    "schemaVersion": 6,
+    "static": {
+        "data": {
+            "logType": "impression",
+            "pageName": "srp",
+            "domain": "srp",
+            "eventName": "ab_test_exposure",
+            "logCategory": "impression"
+        }
+    },
+    "mapping": {
+        "data": {
+            "extraAttribute": "INPUT.abTestAttribute",
+            "productId": "INPUT.productId",
+            "vendorItemId": "INPUT.vendorItemId",
+            "abGroup": "RESULT.SEARCH.srp_abGroup",
+            "itemId": "INPUT.itemId",
+            "q": "INPUT.q",
+            "searchId": "INPUT.searchId",
+            "abTestId": "RESULT.SEARCH.srp_abTestId"
+        }
+    }
+}

@@ -41,6 +41,7 @@ class DeviceProfile:
     app_session_id: str
     ixid: str
     android_id: str
+    member_srl: str = ""  # [New] Consistent MemberID (Default: Guest)
     dpi: str = "450"
     dpi_level: str = "XXHDPI"
     device_uuid: str = field(init=False)
@@ -161,6 +162,8 @@ def create_device_profile(model: str = "SM-A165N") -> DeviceProfile:
         app_session_id=str(uuid.uuid4()),
         ixid=str(uuid.uuid4()),
         android_id=generate_android_id(),
+        # member_srl=str(random.randint(2000000, 300000000)), # [Dev] Random generation disabled per user request
+        member_srl="", # Original behavior (Guest)
         dpi="450",
         dpi_level="XXHDPI"
     )

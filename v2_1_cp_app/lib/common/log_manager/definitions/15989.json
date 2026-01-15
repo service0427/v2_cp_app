@@ -1,0 +1,25 @@
+{
+    "schemaId": 15989,
+    "schemaVersion": 1,
+    "static": {
+        "common": {},
+        "meta": {
+            "schemaId": 15989,
+            "schemaVersion": 1
+        },
+        "data": {
+            "domain": "sdp",
+            "logCategory": "event",
+            "logType": "processing",
+            "pageName": "sdp",
+            "eventName": "page_interact"
+        },
+        "extra": {}
+    },
+    "mapping": {
+        "data": {},
+        "extra": {
+            "pvid": "INPUT.srp_pvId"
+        }
+    }
+}
